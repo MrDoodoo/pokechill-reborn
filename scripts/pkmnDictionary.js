@@ -1558,7 +1558,7 @@ pkmn.growlithe = {
     eggMove : move.howl,
 }
 
-pkmn.hisuianGrowlithe = {
+pkmn.HisuianGrowlithe = {
     type: ["fire", "rock"],
     bst: {
         hp: 55,
