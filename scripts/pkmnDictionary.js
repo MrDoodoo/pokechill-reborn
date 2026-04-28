@@ -1558,7 +1558,7 @@ pkmn.growlithe = {
     eggMove : move.howl,
 }
 
-pkmn.HisuianGrowlithe = {
+pkmn.hisuianGrowlithe = {
     type: ["fire", "rock"],
     bst: {
         hp: 55,
@@ -1570,7 +1570,7 @@ pkmn.HisuianGrowlithe = {
     },
     evolve: function() { return { 1: { pkmn: pkmn.hisuianArcanine, level: evolutionLevel2 } } },
     hiddenAbility: ability.sandyPelt,
-    signature : move.heatCrash
+    signature : move.heatCrash,
 }
 
 pkmn.arcanine = {
