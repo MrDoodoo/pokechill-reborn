@@ -1,8 +1,4 @@
 
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -123,7 +119,6 @@ body {
 }
 
 
-
 #main-content{
     width: 50%;
     height: 100%;
@@ -172,7 +167,6 @@ body {
         width: 100%;
     }
 }
-
 
 
 #explore-header{
@@ -262,8 +256,6 @@ body {
     flex-shrink: 0;
     white-space: nowrap;
 }
-
-
 
 
 .explore-hp{
@@ -473,7 +465,6 @@ flex-direction: column;
 }
 
 
-
 @media (max-width: 1000px) {
 
 .member-inactive .sprite-box{
@@ -486,7 +477,6 @@ flex-direction: column;
 }
 
 }
-
 
 
 .member-inactive{
@@ -517,8 +507,6 @@ flex-direction: column;
     font-weight: 100;
     color: var(--light2);
 }
-
-
 
 
 #explore-drops{
@@ -837,14 +825,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
-
 .pkmn-stats-panel{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 
 
 .pkmn-stats-panel-bst svg{
@@ -872,7 +858,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     align-items: center;
     text-align: center;
 }
-
 
 
 .inspect-pkmn-types div{
@@ -1083,7 +1068,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
-
 .separator-solid{
     height: 0.2rem;
     width: 15rem;
@@ -1095,8 +1079,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     margin-bottom: 0.5rem;
     border-radius: 1rem;
 }
-
-
 
 
 #pkmn-editor {
@@ -1285,7 +1267,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
-
 #pkmn-editor-side-content{
     background-image: url(img/bg/mini/forest.png);
     padding: 0.3rem;
@@ -1297,9 +1278,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     image-rendering: pixelated;
     background-size: cover;
 }
-
-
-
 
 
 #pkmn-edit-buttons{
@@ -1607,7 +1585,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
-
 .area-end-container div img{
     position: absolute;
     image-rendering: pixelated;
@@ -1676,13 +1653,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
-
 @media (max-width: 1000px) {
     #white-transition {
         width: 100%;
     }
 }
-
 
 
 .season-background-halloween {
@@ -1694,7 +1669,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     ;
     background-size: 50px !important;
 }
-
 
 
 #explore-menu {
@@ -1751,8 +1725,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     position: absolute;
     z-index: 100;
 }
-
-
 
 
 .explore-ticket{
@@ -1818,8 +1790,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .explore-ticket:active{
     scale: 0.98;
 }
-
-
 
 
 .explore-ticket div{
@@ -1892,8 +1862,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
-
-
 .explore-ticket-right {
     display: flex;
     justify-content: center !important;
@@ -1955,9 +1923,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 
 }
-
-
-
 
 
 #explore-menu-header span {
@@ -2024,8 +1989,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
-
-
 .explore-menu-selector div:hover {
     background: var(--dark1);
 }
@@ -2040,7 +2003,6 @@ transform: rotate(90deg);
 color: var(--dark2);
 z-index: 1;
 }
-
 
 
 .vs-card{
@@ -2162,7 +2124,6 @@ z-index: 0;
 }
 
 
-
 .area-preview span{
     position: absolute;
     top: -0.5rem;
@@ -2220,7 +2181,6 @@ z-index: 0;
     filter: brightness(0);
     cursor: default;
 }
-
 
 
 #explore-transition {
@@ -2282,8 +2242,6 @@ z-index: 0;
         width: 100%;
     }
 }
-
-
 
 
 #pokedex-list{
@@ -2363,7 +2321,6 @@ z-index: 0;
 }
 
 
-
 #pokedex-filters{
     height: auto;
     width: 100%;
@@ -2438,7 +2395,6 @@ z-index: 0;
 }
 
 
-
 #pokedex-total{
     position: absolute;
     right: 0;
@@ -2483,7 +2439,6 @@ z-index: 0;
     cursor: pointer;
     transition: opacity 0.3s ease;
 }
-
 
 
 .pokedex-menu-flair {
@@ -2536,7 +2491,6 @@ z-index: 0;
         width: 100%;
     }
 }
-
 
 
 #item-menu-list{
@@ -2629,8 +2583,6 @@ z-index: 0;
     flex-wrap: wrap;
     flex-shrink: 0;
 }
-
-
 
 
 .item-menu-tags div{
@@ -3436,7 +3388,6 @@ background:
 }
 
 
-
 #guide-menu{
     position: fixed;
     height: 100%;
@@ -3463,7 +3414,6 @@ background:
         width: 100%;
     }
 }
-
 
 
 #guide-menu-header{
@@ -3632,8 +3582,6 @@ background:
 }
 
 
-
-
 #pkmn-edit-division{
     background: var(--dark1);
     width: 100%;
@@ -3675,7 +3623,6 @@ background:
     paint-order: stroke fill;
     text-shadow: rgba(0, 0, 0, 0.5) 2px 3px 5px;
 }
-
 
 
 .tier-letter-s{
@@ -3908,9 +3855,6 @@ background:
     padding: 0 0.4rem;
     color: var(--dark1);
 }
-
-
-
 
 
 #genetics-host-div, #genetics-sample-div{
@@ -4434,15 +4378,7 @@ background:
 }
 
 
-
 #event-banner{
-
-
-
-
-
-
-
     background-image: url(img/bg/event/kanto.png);
     height: 8rem;
     width: 95%;
@@ -4457,10 +4393,6 @@ background:
     border: rgba(255, 255, 255, 0.7) double 4px;
     margin-top: 0.5rem;
 }
-
-
-
-
 
 
 #event-banner span{
@@ -4488,7 +4420,6 @@ background:
         font-size: 2rem;
     }
 }
-
 
 
 #training-menu{
@@ -4782,8 +4713,6 @@ background:
 }
 
 
-
-
 #dictionary-menu{
     position: fixed;
     height: 100%;
@@ -4857,7 +4786,6 @@ background:
 }
 
 
-
 #dictionary-list div:hover{
     background: var(--dark2);
 }
@@ -4865,7 +4793,6 @@ background:
 #dictionary-list div:active{
     scale: 0.9;
 }
-
 
 
 .dictionary-overview-data{
@@ -4956,8 +4883,6 @@ background:
 }
 
 
-
-
 #team-preview .explore-team-member {
     cursor: move !important;
     transition: opacity 0.2s;
@@ -5023,8 +4948,6 @@ transform: translateY(-1rem);
 }
 
 
-
-
 .auto-build-confirm,
 .duplicate-build-confirm{
     border-radius: 0.2rem;
@@ -5056,7 +4979,6 @@ transform: translateY(-1rem);
 }
 
 
-
 #tooltipActions{
     width: 100%;
     display: flex;
@@ -5064,8 +4986,6 @@ transform: translateY(-1rem);
     align-items: center;
     flex-shrink: 0;
 }
-
-
 
 
 #custom-challenges-menu{
@@ -5089,7 +5009,6 @@ transform: translateY(-1rem);
         width: 100%;
     }
 }
-
 
 
 #custom-challenges-header{
@@ -5417,9 +5336,6 @@ transform: translateY(-1rem);
 }
 
 
-
-
-
 .pkmn-walk{
     width: 100%;
     background: rgba(0, 0, 0, 0);
@@ -5645,10 +5561,6 @@ transform: translateY(-1rem);
     scale: 2;
   }
 }
-
-
-
-
 
 
 .arena-card{
@@ -5894,9 +5806,6 @@ transform: translateY(-1rem);
 }
 
 
-
-
-
 #decor-menu{
     position: fixed;
     height: 100%;
@@ -6077,12 +5986,6 @@ transform: translateY(-1rem);
 }
 
 
-
-
-
-
-
-
 #dimension-menu{
     position: fixed;
     height: 100%;
@@ -6193,7 +6096,6 @@ transform: translateY(-1rem);
 }
 
 
-
 .dimension-sprite{
     animation: pkmn-active 1.5s infinite;
     image-rendering: pixelated;
@@ -6248,7 +6150,6 @@ transform: translateY(-1rem);
     margin: -1rem;
 }
 }
-
 
 
 #dimension-listing{
@@ -6334,7 +6235,6 @@ transform: translateY(-1rem);
     justify-content: center;
     align-items: center;
 }
-
 
 
 .season-pick{
@@ -6477,7 +6377,6 @@ transform: translateY(-1rem);
 }
 
 
-
 #curry-buttons{
     display: flex;
     justify-content: space-between;
@@ -6529,7 +6428,6 @@ transform: translateY(-1rem);
 }
 
 
-
 #starsign-list{
     height: 100%;
     width: 100%;
@@ -6570,7 +6468,6 @@ transform: translateY(-1rem);
 }
 
 
-
 .tag-button{
     display: flex;
     justify-content: center;
@@ -6585,15 +6482,6 @@ transform: translateY(-1rem);
     width: 2rem;
     margin-right: 0.5rem;
 }
-
-
-
-
-
-
-
-
-
 
 
 
