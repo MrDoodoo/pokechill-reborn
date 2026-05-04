@@ -8645,8 +8645,8 @@ document.getElementById("genetics-bar-power").style.width = `${(powerCost / 8) *
 if (powerCost >= 6) document.getElementById("genetics-bar-power").style.backgroundColor = `coral`
 else {document.getElementById("genetics-bar-power").style.backgroundColor = `rgb(229, 143, 255)`}
 
-let timeNeeded = ( 5 * powerCost ) *60
-if (item.replicatorUpgradeS.got>0) { timeNeeded = Math.max(10, ( 5 * powerCost )-30 ) *60 }
+let timeNeeded = ( 7 * powerCost ) *60
+if (item.replicatorUpgradeS.got>0) { timeNeeded = Math.max(10, ( 7 * powerCost )-30 ) *60 }
 const [h, m, x] = [
   (timeNeeded / 3600) | 0,
   ((timeNeeded % 3600) / 60) | 0,
