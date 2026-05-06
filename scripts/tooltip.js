@@ -282,7 +282,6 @@ function tooltipData(category, ttdata){
             if (areas[ttdata].ticketIndex==3 || areas[ttdata].ticketIndex==6) itemToAdd = item.yellowApricorn.id
             if (areas[ttdata].ticketIndex==4 || areas[ttdata].ticketIndex==7) itemToAdd = item.pinkApricorn.id
             if (areas[ttdata].ticketIndex==5 || areas[ttdata].ticketIndex==8) itemToAdd = item.greenApricorn.id
-            if (areas[ttdata].ticketIndex==9 || areas[ttdata].ticketIndex==12) itemToAdd = item.blackApricorn.id
             if (itemToAdd == "") return
             const div = document.createElement("div");
             div.dataset.item = itemToAdd
