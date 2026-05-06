@@ -18,10 +18,3 @@ Added new Starter.
 v2
 Fixed an issue with Hisuian png.
 Event Key will not be removed.
-
-v3
-Added Black Apricorn shop system with special items: timeCandyXL x1, timeCandy x3, and megaRaidPass1.
-Mega Raid Pass 1 unlocks Tier I event raids for 10 days, bypassing normal unlock requirements.
-Rare and White memories now available in the Black Apricorn shop.
-Black Apricorn drops added to specific raids (ticketIndex 9 and 12).
-Fixed an issue with z-moves.
