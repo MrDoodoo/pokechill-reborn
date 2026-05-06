@@ -1596,7 +1596,7 @@ saved.shopApricornMemoryRotation = undefined
 saved.shopApricornMemoryRotationWhite = undefined
 function assignShopApricorn(){
 
-    if (saved.lastShopApricornReset != rotationWildCurrent){
+    if (saved.lastShopApricornReset != rotationWildCurrent || !Array.isArray(saved.shopApricornMemoryRotation) || !Array.isArray(saved.shopApricornMemoryRotationWhite) || !Array.isArray(saved.shopApricornMemoryRotationBlack)){
     saved.lastShopApricornReset = rotationWildCurrent
 
 
