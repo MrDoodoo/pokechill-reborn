@@ -4436,7 +4436,7 @@ pkmn.togetic = {
         sdef: 105,
         spe: 40,
     },
-  evolve: function() { return { 1: { pkmn: pkmn.togekiss, item: item.shinyStone /*o equivalente*/ } } },
+  evolve: function() { return { 1: { pkmn: pkmn.togekiss, item: item.shinyStone } } },
     hiddenAbility: ability.sereneGrace,
     signature : move.metronome
 }

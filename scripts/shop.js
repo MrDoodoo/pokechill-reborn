@@ -1321,6 +1321,33 @@ shop.shopApricornItem4 = {
     category: `apricorn`
 }
 
+shop.shopApricornBlackItem1 = {
+    icon: item.timeCandyXL.id,
+    name: `Time Candy XL x1`,
+    price: 3,
+    stock: 5,
+    currency: item.blackApricorn.id,
+    category: `apricorn`
+}
+
+shop.shopApricornBlackItem2 = {
+    icon: item.timeCandy.id,
+    name: `Time Candy x3`,
+    price: 1,
+    stock: 10,
+    currency: item.blackApricorn.id,
+    category: `apricorn`,
+    effect: function() {item.timeCandy.got += 3}
+}
+
+shop.shopApricornBlackItem3 = {
+    icon: item.festivalTicket.id,
+    name: `Mega Raid Pass I`,
+    price: 150,
+    currency: item.blackApricorn.id,
+    category: `apricorn`
+}
+
 shop.shopApricornMemory1 = {
     icon: item.googlySpecs.id,
     price: shopApricornCostDefault,
@@ -1417,6 +1444,29 @@ shop.shopApricornMemoryWhite3 = {
     category: `apricorn`
 }
 
+shop.shopApricornMemoryBlack1 = {
+    icon: item.googlySpecs.id,
+    price: shopApricornCostDefault,
+    stock: 3,
+    currency: item.blackApricorn.id,
+    category: `apricorn`
+}
+
+shop.shopApricornMemoryBlack2 = {
+    icon: item.googlySpecs.id,
+    price: shopApricornCostDefault,
+    stock: 3,
+    currency: item.blackApricorn.id,
+    category: `apricorn`
+}
+
+shop.shopApricornMemoryBlack3 = {
+    icon: item.googlySpecs.id,
+    price: shopApricornCostDefault,
+    stock: 3,
+    currency: item.blackApricorn.id,
+    category: `apricorn`
+}
 
 shop.shopMagazineSubscription = {
     icon: item.magazineSubscription.id,
@@ -1552,6 +1602,7 @@ function assignShopApricorn(){
 
     const memoryPool = []
     const memoryPoolWhite = []
+    const memoryPoolBlack = []
 
     for (const i in item){
         if (item[i].type !== "memory") continue
@@ -1561,11 +1612,14 @@ function assignShopApricorn(){
         if (item[i].rarity == "rare") memoryPoolWhite.push(i)
         if (item[i].rarity == "white") memoryPoolWhite.push(i)
 
+        if (item[i].rarity == "rare") memoryPoolBlack.push(i)
+        if (item[i].rarity == "white") memoryPoolBlack.push(i)
     }
 
 
     saved.shopApricornMemoryRotation = arrayPick(memoryPool,9)
     saved.shopApricornMemoryRotationWhite = arrayPick(memoryPoolWhite,3)
+    saved.shopApricornMemoryRotationBlack = arrayPick(memoryPoolBlack,3)
 
 
 
@@ -1582,6 +1636,9 @@ function assignShopApricorn(){
     shop.shopApricornMemoryWhite1.stock = 3
     shop.shopApricornMemoryWhite2.stock = 3
     shop.shopApricornMemoryWhite3.stock = 3
+    shop.shopApricornMemoryBlack1.stock = 3
+    shop.shopApricornMemoryBlack2.stock = 3
+    shop.shopApricornMemoryBlack3.stock = 3
 
     shop.shopApricornItem1.stock = 3
     shop.shopApricornItem2.stock = 5
@@ -1604,6 +1661,9 @@ function assignShopApricorn(){
     shop.shopApricornMemoryWhite1.icon = saved.shopApricornMemoryRotationWhite[0]
     shop.shopApricornMemoryWhite2.icon = saved.shopApricornMemoryRotationWhite[1]
     shop.shopApricornMemoryWhite3.icon = saved.shopApricornMemoryRotationWhite[2]
+    shop.shopApricornMemoryBlack1.icon = saved.shopApricornMemoryRotationBlack[0]
+    shop.shopApricornMemoryBlack2.icon = saved.shopApricornMemoryRotationBlack[1]
+    shop.shopApricornMemoryBlack3.icon = saved.shopApricornMemoryRotationBlack[2]
 
 
 
@@ -1765,6 +1825,7 @@ function updateItemShop(){
     <div><img src="img/items/pinkApricorn.png">${item.pinkApricorn.got}</div>
     <div><img src="img/items/greenApricorn.png">${item.greenApricorn.got}</div>
     <div><img src="img/items/whiteApricorn.png">${item.whiteApricorn.got}</div>
+    <div><img src="img/items/blackApricorn.png">${item.blackApricorn.got}</div>
     `
     document.getElementById("shop-listing").appendChild(apricornCounter);
 

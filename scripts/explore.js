@@ -64,6 +64,22 @@ function rngSeeded(number){
     
 }
 
+function canOpenWithMegaRaidPass(area) {
+    if (saved.megaRaidPassEnd) {
+        const now = new Date();
+        const month = now.getMonth() + 1;
+        const day = now.getDate();
+        const current = month * 100 + day;
+        const endDate = saved.megaRaidPassEnd.month * 100 + saved.megaRaidPassEnd.day;
+        if (current > endDate) {
+            delete saved.megaRaidPassEnd;
+            return false;
+        }
+        return area?.type === "event" && area?.difficulty === tier1difficulty;
+    }
+    return false;
+}
+
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -469,6 +485,7 @@ for (let i = 0; i < 4; i++) {
             if (areas[saved.currentArea].ticketIndex==3 || areas[saved.currentArea].ticketIndex==6) itemToAdd = item.yellowApricorn.id
             if (areas[saved.currentArea].ticketIndex==4 || areas[saved.currentArea].ticketIndex==7) itemToAdd = item.pinkApricorn.id
             if (areas[saved.currentArea].ticketIndex==5 || areas[saved.currentArea].ticketIndex==8) itemToAdd = item.greenApricorn.id
+            if (areas[saved.currentArea].ticketIndex==9 || areas[saved.currentArea].ticketIndex==12) itemToAdd = item.blackApricorn.id
             if (areas[saved.currentArea].difficulty == tier3difficulty && rng(0.20) || areas[saved.currentArea].difficulty == tier4difficulty){
                 item[itemToAdd].got++
                 item[itemToAdd].newItem++
@@ -2898,6 +2915,11 @@ function exploreCombatPlayer() {
             let zTypeMultiplier = typeEffectiveness(zTyping, pkmn[saved.currentPkmn].type)
             if (areas[saved.currentArea].fieldEffect?.includes(field.ironBody.id) && typeEffectiveness(zTyping, pkmn[saved.currentPkmn].type)>1) zTypeMultiplier = 1
 
+            if (defender.temporalType) {
+                if (typeEffectiveness(zTyping, defender.temporalType)>1) zTypeMultiplier *= 1.25
+                if (typeEffectiveness(zTyping, defender.temporalType)<1) zTypeMultiplier *= 0.75 
+            }
+
             zTotalPower *= zTypeMultiplier
 
 
@@ -4625,6 +4647,9 @@ function setEventAreas() {
 
         divAreas.addEventListener("click", e => { 
             
+            if (areas[i].encounter && areas[i].difficulty===tier1difficulty && canOpenWithMegaRaidPass(areas[i]) && areas[i].unlockRequirement && !areas[i].unlockRequirement()) {
+                // pass is consumed only if used to bypass unlockRequirement
+            }
             if (areas[i].encounter && areas[i].difficulty===tier2difficulty && areas.vsEliteFourLance.defeated!=true) return
             if (areas[i].encounter && areas[i].difficulty===tier4difficulty && areas.vsUltraEntityLusamine.defeated!=true) return
             saved.currentAreaBuffer = i
@@ -4641,7 +4666,7 @@ function setEventAreas() {
 
 
        let unlockRequirement = ""
-       if (areas[i].unlockRequirement && !areas[i].unlockRequirement()) unlockRequirement =`<span class="ticket-unlock">
+       if (areas[i].unlockRequirement && !areas[i].unlockRequirement() && !canOpenWithMegaRaidPass(areas[i])) unlockRequirement =`<span class="ticket-unlock">
        
        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M2 16c0-2.828 0-4.243.879-5.121C3.757 10 5.172 10 8 10h8c2.828 0 4.243 0 5.121.879C22 11.757 22 13.172 22 16s0 4.243-.879 5.121C20.243 22 18.828 22 16 22H8c-2.828 0-4.243 0-5.121-.879C2 20.243 2 18.828 2 16" opacity="0.5"/><path fill="currentColor" d="M6.75 8a5.25 5.25 0 0 1 10.5 0v2.004c.567.005 1.064.018 1.5.05V8a6.75 6.75 0 0 0-13.5 0v2.055a24 24 0 0 1 1.5-.051z"/></svg>
        <span>${areas[i].unlockDescription}</span>

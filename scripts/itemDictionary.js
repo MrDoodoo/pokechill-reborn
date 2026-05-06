@@ -655,6 +655,26 @@ item.festivalTicket = {
 }
 
 
+item.megaRaidPass1 = {
+    type: "key",
+    usable: true,
+    effect: function() {
+        const endDate = new Date()
+        endDate.setDate(endDate.getDate() + 10)
+        saved.megaRaidPassEnd = {
+            month: endDate.getMonth() + 1,
+            day: endDate.getDate()
+        }
+        this.got--
+        updateItemBag()
+        document.getElementById("tooltipTop").style.display = `none`
+        document.getElementById("tooltipTitle").style.display = `none`
+        document.getElementById("tooltipMid").style.display = `none`
+        document.getElementById("tooltipBottom").innerHTML = `Tier I event raids are now unlocked for the next 10 days.`
+        openTooltip()
+    },
+    info: function() {return `Use: Unlocks Tier I event raids for the next 10 days, bypassing Tier I raid unlock requirements.`},
+}
 
 
 
