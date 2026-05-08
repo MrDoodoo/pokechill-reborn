@@ -1,8 +1,7 @@
-saved.firstTimePlaying = true //esta flag se tiene que quitar cuando seleccione el pkmn, es lo que hace que no puedas guardar
-
+saved.firstTimePlaying = true; //esta flag se tiene que quitar cuando seleccione el pkmn, es lo que hace que no puedas guardar
 
 function saveGame() {
-  if (saved.firstTimePlaying == true) return //scary!
+  if (saved.firstTimePlaying == true) return; //scary!
   let data = {};
 
   // Variable suelta
@@ -16,7 +15,6 @@ function saveGame() {
     data[i].newItem = item[i].newItem;
   }
 
-
   // Shop
   for (const i in shop) {
     data[i] = {};
@@ -28,23 +26,25 @@ function saveGame() {
     data[i] = {};
     data[i].defeated = areas[i].defeated;
     data[i].hpPercentage = areas[i].hpPercentage;
-    if (areas[i].type=="event" && areas[i].encounter) data[i].ticketIndex = areas[i].ticketIndex;
+    if (areas[i].type == "event" && areas[i].encounter)
+      data[i].ticketIndex = areas[i].ticketIndex;
 
-    if (areas[i].type=="frontier") data[i].level = areas[i].level;
-    if (areas[i].type=="frontier") data[i].team = areas[i].team;
-    if (areas[i].type=="frontier") data[i].difficulty = areas[i].difficulty;
-    if (areas[i].type=="frontier") data[i].tier = areas[i].tier;
-    if (areas[i].type=="frontier") data[i].reward = areas[i].reward;
-    if (areas[i].type=="frontier") data[i].itemReward = areas[i].itemReward;
-    if (areas[i].type=="frontier") data[i].background = areas[i].background;
-    if (areas[i].type=="frontier") data[i].fieldEffect = areas[i].fieldEffect;
-    if (areas[i].id=="training") data[i].tier = areas[i].tier;
-    if (areas[i].id=="training") data[i].currentTraining = areas[i].currentTraining;
-    if (areas[i].id=="wildlifePark") data[i].spawns = areas[i].spawns;
-    if (areas[i].id=="wildlifePark") data[i].icon = areas[i].icon;
-    if (areas[i].id==areas.frontierBattleFactory.id) data[i].icon = areas[i].icon;
-    if (areas[i].type=="dimension") data[i].spawns = areas[i].spawns;
-
+    if (areas[i].type == "frontier") data[i].level = areas[i].level;
+    if (areas[i].type == "frontier") data[i].team = areas[i].team;
+    if (areas[i].type == "frontier") data[i].difficulty = areas[i].difficulty;
+    if (areas[i].type == "frontier") data[i].tier = areas[i].tier;
+    if (areas[i].type == "frontier") data[i].reward = areas[i].reward;
+    if (areas[i].type == "frontier") data[i].itemReward = areas[i].itemReward;
+    if (areas[i].type == "frontier") data[i].background = areas[i].background;
+    if (areas[i].type == "frontier") data[i].fieldEffect = areas[i].fieldEffect;
+    if (areas[i].id == "training") data[i].tier = areas[i].tier;
+    if (areas[i].id == "training")
+      data[i].currentTraining = areas[i].currentTraining;
+    if (areas[i].id == "wildlifePark") data[i].spawns = areas[i].spawns;
+    if (areas[i].id == "wildlifePark") data[i].icon = areas[i].icon;
+    if (areas[i].id == areas.frontierBattleFactory.id)
+      data[i].icon = areas[i].icon;
+    if (areas[i].type == "dimension") data[i].spawns = areas[i].spawns;
   }
 
   // Pokémon
@@ -75,7 +75,6 @@ function saveGame() {
     data[i].starsignList = pkmn[i].starsignList;
     data[i].nature = pkmn[i].nature;
     data[i].tagList = pkmn[i].tagList;
-
   }
 
   localStorage.setItem("gameData", JSON.stringify(data));
@@ -86,7 +85,7 @@ function loadGame() {
   const raw = localStorage.getItem("gameData");
   if (!raw) {
     return;
-  } 
+  }
 
   const data = JSON.parse(raw);
 
@@ -100,7 +99,6 @@ function loadGame() {
     }
   }
 
-
   for (const i in shop) {
     if (data[i]) {
       shop[i].stock = data[i].stock;
@@ -109,26 +107,30 @@ function loadGame() {
 
   for (const i in areas) {
     if (data[i]) {
-    areas[i].defeated = data[i].defeated;
-    if (areas[i].type=="event" && areas[i].encounter) areas[i].ticketIndex = data[i].ticketIndex;
-    if (data[i].hpPercentage!==undefined) areas[i].hpPercentage = data[i].hpPercentage;
+      areas[i].defeated = data[i].defeated;
+      if (areas[i].type == "event" && areas[i].encounter)
+        areas[i].ticketIndex = data[i].ticketIndex;
+      if (data[i].hpPercentage !== undefined)
+        areas[i].hpPercentage = data[i].hpPercentage;
 
-    if (areas[i].type=="frontier") areas[i].level = data[i].level;
-    if (areas[i].type=="frontier") areas[i].team = data[i].team;
-    if (areas[i].type=="frontier") areas[i].difficulty = data[i].difficulty;
-    if (areas[i].type=="frontier") areas[i].tier = data[i].tier;
-    if (areas[i].type=="frontier") areas[i].reward = data[i].reward;
-    if (areas[i].type=="frontier") areas[i].itemReward = data[i].itemReward;
-    if (areas[i].type=="frontier") areas[i].background = data[i].background;
-    if (areas[i].type=="frontier") areas[i].fieldEffect = data[i].fieldEffect;
-    if (areas[i].id=="training") areas[i].tier = data[i].tier;
-    if (areas[i].id=="training") areas[i].currentTraining = data[i].currentTraining;
-    if (areas[i].id=="wildlifePark") areas[i].spawns = data[i].spawns;
-    if (areas[i].id=="wildlifePark") areas[i].icon = data[i].icon;
-    if (areas[i].id==areas.frontierBattleFactory.id) areas[i].icon = data[i].icon;
-    if (areas[i].type=="dimension") areas[i].spawns = data[i].spawns;
-
-  }
+      if (areas[i].type == "frontier") areas[i].level = data[i].level;
+      if (areas[i].type == "frontier") areas[i].team = data[i].team;
+      if (areas[i].type == "frontier") areas[i].difficulty = data[i].difficulty;
+      if (areas[i].type == "frontier") areas[i].tier = data[i].tier;
+      if (areas[i].type == "frontier") areas[i].reward = data[i].reward;
+      if (areas[i].type == "frontier") areas[i].itemReward = data[i].itemReward;
+      if (areas[i].type == "frontier") areas[i].background = data[i].background;
+      if (areas[i].type == "frontier")
+        areas[i].fieldEffect = data[i].fieldEffect;
+      if (areas[i].id == "training") areas[i].tier = data[i].tier;
+      if (areas[i].id == "training")
+        areas[i].currentTraining = data[i].currentTraining;
+      if (areas[i].id == "wildlifePark") areas[i].spawns = data[i].spawns;
+      if (areas[i].id == "wildlifePark") areas[i].icon = data[i].icon;
+      if (areas[i].id == areas.frontierBattleFactory.id)
+        areas[i].icon = data[i].icon;
+      if (areas[i].type == "dimension") areas[i].spawns = data[i].spawns;
+    }
   }
 
   for (const i in pkmn) {
@@ -160,9 +162,7 @@ function loadGame() {
       pkmn[i].tagList = data[i].tagList;
     }
   }
-
 }
-
 
 function exportData() {
   const raw = localStorage.getItem("gameData");
@@ -208,19 +208,13 @@ function importData() {
   input.click();
 }
 
-
-
-
-
-
-
 function exportToText() {
   const raw = localStorage.getItem("gameData");
   if (!raw) {
     console.log("No save data found");
     return null;
   }
-  
+
   return raw;
 }
 
@@ -260,7 +254,9 @@ async function pasteFromClipboard() {
     input.value = text;
     alert("Data pasted successfully!");
   } catch (err) {
-    alert("Could not paste from clipboard. Please paste manually or grant clipboard permissions.");
+    alert(
+      "Could not paste from clipboard. Please paste manually or grant clipboard permissions.",
+    );
   }
 }
 
@@ -276,7 +272,7 @@ function textData() {
       This is your savefile code<br>You can copy or paste savefile codes here to export or import saves<br>
       <textarea id="text-data-raw" rows="10" style="width:95%; resize:vertical; font-family:monospace; font-size:0.9rem;"></textarea>
     `;
-    
+
     document.getElementById("text-data-raw").value = savedData;
 
     document.getElementById("tooltipBottom").innerHTML = `
@@ -318,11 +314,7 @@ function textData() {
   openTooltip();
 }
 
-
-
-
-
-setInterval(saveGame, 1 * 60 * 1000); 
+setInterval(saveGame, 1 * 60 * 1000);
 
 document.addEventListener("keydown", (ev) => {
   if (ev.key.toLowerCase() === "s") {
