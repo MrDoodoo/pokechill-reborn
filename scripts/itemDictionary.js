@@ -1191,7 +1191,7 @@ item.primalEarth = {
   rotation: 2,
   itemToUse: true,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1199,7 +1199,7 @@ item.thunderousRock = {
   type: "key",
   rotation: 1,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1207,7 +1207,7 @@ item.articRock = {
   type: "key",
   rotation: 1,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1215,7 +1215,7 @@ item.ancientOrchid = {
   type: "key",
   rotation: 2,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1223,7 +1223,7 @@ item.futureDisk = {
   type: "key",
   rotation: 5,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1231,7 +1231,7 @@ item.ancientKeystone = {
   type: "key",
   rotation: 3,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1239,7 +1239,7 @@ item.steelKeystone = {
   type: "key",
   rotation: 3,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1247,7 +1247,7 @@ item.frozenKeystone = {
   type: "key",
   rotation: 3,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1255,7 +1255,7 @@ item.aetherKeycard = {
   type: "key",
   rotation: 4,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1263,7 +1263,7 @@ item.wormholeResidue = {
   type: "key",
   rotation: 4,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1271,7 +1271,7 @@ item.futureContraption = {
   type: "key",
   rotation: 5,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1279,7 +1279,7 @@ item.redChain = {
   type: "key",
   rotation: 6,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1287,7 +1287,7 @@ item.wisdomPetal = {
   type: "key",
   rotation: 6,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1295,7 +1295,7 @@ item.epochFeather = {
   type: "key",
   rotation: 1,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
@@ -1303,7 +1303,7 @@ item.pokeflute = {
   type: "key",
   rotation: 1,
   info: function () {
-    return `Can be used to catch event Pokemon. Expires after event finishes`;
+    return `Can be used to catch event Pokemon.`;
   },
 };
 
