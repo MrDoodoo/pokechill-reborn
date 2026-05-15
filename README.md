@@ -18,3 +18,7 @@ Added new Starter.
 v2
 Fixed an issue with Hisuian png.
 Event Key will not be removed.
+
+v3
+Added Black Apricorn to Mega Dimension T3 & T4
+Added new items to the Apricorn shop
