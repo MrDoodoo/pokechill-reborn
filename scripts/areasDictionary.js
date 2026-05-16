@@ -1865,7 +1865,7 @@ areas.sunkenTempleIII = {
   },
 };
 
-const rotationEventMax = 6;
+const rotationEventMax = 7;
 const tier1difficulty = 25;
 const tier2difficulty = 70;
 const tier3difficulty = 200;
@@ -2043,47 +2043,6 @@ areas.eventMegaVenusaur = {
   reward: [item.venusaurite, pkmn.bulbasaur],
   category: 2,
 };
-
-/*
-
-areas.articSummit = {
-    rotation: 1,
-    type: `event`,
-    background : `snow`,
-    uncatchable: true,
-    unlockDescription : `Defeat Elite Trainer Cynthia in VS to unlock`,
-    unlockRequirement : function() { return areas.vsEliteTrainerCynthia.defeated },
-    level : 90,
-    icon: pkmn.beartic,
-    spawns: {
-        common : [pkmn.beartic,pkmn.avalugg,pkmn.walrein,pkmn.vanilluxe],
-    },
-    drops: {
-        common : [item.nothing],
-        uncommon : [item.articRock]
-    },
-}
-
-
-areas.fierySummit = {
-    rotation: 1,
-    type: `event`,
-    background : `volcano`,
-    level : 90,
-    uncatchable: true,
-    unlockDescription : `Defeat Elite Trainer Cynthia in VS to unlock`,
-    unlockRequirement : function() { return areas.vsEliteTrainerCynthia.defeated },
-    icon: pkmn.houndoom,
-    spawns: {
-        common : [pkmn.houndoom,pkmn.darmanitan,pkmn.magmortar,pkmn.alolanMarowak],
-    },
-    drops: {
-        common : [item.nothing],
-        uncommon : [item.fieryRock]
-    },
-}
-
-*/
 
 areas.eventZapdos = {
   rotation: 1,
@@ -4985,6 +4944,457 @@ areas.eventMegaAlakazam = {
   category: 1,
 };
 
+//New Raid Event
+areas.cosplayConvention2 = {
+  rotation: 7,
+  type: `event`,
+  background: `plant`,
+  level: wildAreaLevel1,
+  icon: pkmn.pikachuBelle,
+  spawns: {
+    common: [pkmn.spikyPichu],
+    rare: [
+      pkmn.pikachuAsh,
+      pkmn.pikachuHoenn,
+      pkmn.pikachuWorld,
+      pkmn.pikachuUnova,
+      pkmn.pikachuKalos,
+    ],
+  },
+  drops: {
+    common: [item.mysteryEgg],
+    rare: [item.thunderStone],
+  },
+  category: 1,
+};
+
+areas.articSummit = {
+  rotation: 7,
+  type: `event`,
+  background: `snow`,
+  uncatchable: true,
+  unlockDescription: `Defeat Elite Trainer Cynthia in VS to unlock`,
+  unlockRequirement: function () {
+    return areas.vsEliteTrainerCynthia.defeated;
+  },
+  level: 90,
+  icon: pkmn.beartic,
+  spawns: {
+    common: [pkmn.beartic, pkmn.avalugg, pkmn.walrein, pkmn.vanilluxe],
+  },
+  drops: {
+    common: [item.nothing],
+    uncommon: [item.articRock],
+  },
+  category: 1,
+};
+
+areas.castform = {
+  rotation: 7,
+  type: `event`,
+  background: `plant`,
+  level: wildAreaLevel5,
+  icon: pkmn.castform,
+  spawns: {
+    common: [pkmn.castform],
+    rare: [pkmn.castformRainy, pkmn.castformSunny, pkmn.castformSnowy],
+  },
+  drops: {
+    common: [item.mysteryEgg],
+    rare: [item.silkScarf],
+  },
+  category: 2,
+};
+
+areas.fierySummit = {
+  rotation: 7,
+  type: `event`,
+  background: `volcano`,
+  level: 95,
+  difficulty: 5,
+  uncatchable: true,
+  unlockDescription: `Defeat Elite Trainer Cynthia in VS to unlock`,
+  unlockRequirement: function () {
+    return areas.vsEliteTrainerCynthia.defeated;
+  },
+  icon: pkmn.houndoom,
+  spawns: {
+    common: [
+      pkmn.houndoom,
+      pkmn.darmanitan,
+      pkmn.magmortar,
+      pkmn.alolanMarowak,
+    ],
+  },
+  drops: {
+    common: [item.nothing],
+    uncommon: [item.fieryRock],
+  },
+  category: 2,
+};
+
+areas.eventMegaSlowbro = {
+  rotation: 7,
+  type: `event`,
+  name: `Slowbro Mega-Showdown`,
+  background: `beach`,
+  icon: pkmn.megaSlowbro,
+  trainer: true,
+  encounter: true,
+  difficulty: tier1difficulty,
+  encounterEffect: function () {
+    item.articRock.got--;
+  },
+  unlockDescription: `Requires an <img src="img/items/articRock.png"> Artic Rock to enter`,
+  unlockRequirement: function () {
+    return item.articRock.got > 0;
+  },
+  level: 90,
+  team: {
+    slot1: pkmn.megaSlowbro,
+    slot1Moves: [
+      move.calmMind.id,
+      move.surf.id,
+      move.psychic.id,
+      move.ironDefense.id,
+    ],
+  },
+  reward: [item.slowbronite, pkmn.slowpoke],
+  category: 1,
+};
+
+areas.eventMegaKangaskhan = {
+  rotation: 7,
+  type: `event`,
+  name: `Kangaskhan Mega-Showdown`,
+  background: `gym`,
+  icon: pkmn.megaKangaskhan,
+  trainer: true,
+  encounter: true,
+  difficulty: tier1difficulty,
+  encounterEffect: function () {
+    item.articRock.got--;
+  },
+  unlockDescription: `Requires an <img src="img/items/articRock.png"> Artic Rock to enter`,
+  unlockRequirement: function () {
+    return item.articRock.got > 0;
+  },
+  level: 90,
+  team: {
+    slot1: pkmn.megaKangaskhan,
+    slot1Moves: [
+      move.crunch.id,
+      move.powerupPunch.id,
+      move.strength.id,
+      move.earthquake.id,
+    ],
+  },
+  reward: [item.kangaskhanite, pkmn.kangaskhan],
+  category: 1,
+};
+
+areas.eventMegaHoundoom = {
+  rotation: 7,
+  type: `event`,
+  name: `Houndoom Mega-Showdown`,
+  background: `volcano`,
+  icon: pkmn.megaHoundoom,
+  trainer: true,
+  encounter: true,
+  difficulty: tier1difficulty,
+  encounterEffect: function () {
+    item.articRock.got--;
+  },
+  unlockDescription: `Requires an <img src="img/items/articRock.png"> Artic Rock to enter`,
+  unlockRequirement: function () {
+    return item.articRock.got > 0;
+  },
+  level: 90,
+  team: {
+    slot1: pkmn.megaHoundoom,
+    slot1Moves: [
+      move.nastyPlot.id,
+      move.flamethrower.id,
+      move.darkPulse.id,
+      move.sludgeWave.id,
+    ],
+  },
+  reward: [item.houndoominite, pkmn.houndour],
+  category: 1,
+};
+
+areas.eventMegaSableye = {
+  rotation: 7,
+  type: `event`,
+  name: `Sableye Mega-Showdown`,
+  background: `cave`,
+  icon: pkmn.megaSableye,
+  trainer: true,
+  encounter: true,
+  difficulty: tier2difficulty,
+  encounterEffect: function () {
+    item.articRock.got -= 3;
+  },
+  unlockDescription: `Requires x3 <img src="img/items/articRock.png"> Artic Rocks to enter`,
+  unlockRequirement: function () {
+    return item.articRock.got > 2;
+  },
+  level: 100,
+  team: {
+    slot1: pkmn.megaSableye,
+    slot1Moves: [
+      move.ironDefense.id,
+      move.darkPulse.id,
+      move.shadowBall.id,
+      move.willOWisp.id,
+    ],
+  },
+  reward: [item.sablenite, pkmn.sableye],
+  category: 1,
+};
+
+areas.eventMegaMedicham = {
+  rotation: 7,
+  type: `event`,
+  name: `Medicham Mega-Showdown`,
+  background: `mountain`,
+  icon: pkmn.megaMedicham,
+  trainer: true,
+  encounter: true,
+  difficulty: tier2difficulty,
+  encounterEffect: function () {
+    item.articRock.got -= 3;
+  },
+  unlockDescription: `Requires x3 <img src="img/items/articRock.png"> Artic Rocks to enter`,
+  unlockRequirement: function () {
+    return item.articRock.got > 2;
+  },
+  level: 100,
+  team: {
+    slot1: pkmn.megaMedicham,
+    slot1Moves: [
+      move.closeCombat.id,
+      move.psychoCut.id,
+      move.icePunch.id,
+      move.leafBlade.id,
+    ],
+  },
+  reward: [item.medichamite, pkmn.meditite],
+  category: 1,
+};
+
+areas.eventMegaSharpedo = {
+  rotation: 7,
+  type: `event`,
+  name: `Sharpedo Mega-Showdown`,
+  background: `sea`,
+  icon: pkmn.megaSharpedo,
+  trainer: true,
+  encounter: true,
+  difficulty: tier2difficulty,
+  encounterEffect: function () {
+    item.articRock.got -= 3;
+  },
+  unlockDescription: `Requires x3 <img src="img/items/articRock.png"> Artic Rocks to enter`,
+  unlockRequirement: function () {
+    return item.articRock.got > 2;
+  },
+  level: 100,
+  team: {
+    slot1: pkmn.megaSharpedo,
+    slot1Moves: [
+      move.crunch.id,
+      move.waterfall.id,
+      move.iceFang.id,
+      move.nightSlash.id,
+    ],
+  },
+  reward: [item.sharpedonite, pkmn.carvanha],
+  category: 1,
+};
+
+//T3
+areas.eventMegaAltaria = {
+  rotation: 7,
+  type: `event`,
+  name: `Altaria Mega-Showdown`,
+  background: `mountain`,
+  icon: pkmn.megaAltaria,
+  trainer: true,
+  encounter: true,
+  difficulty: tier3difficulty,
+  encounterEffect: function () {
+    item.fieryRock.got--;
+  },
+  unlockDescription: `Requires an <img src="img/items/fieryRock.png"> Fiery Rock to enter`,
+  unlockRequirement: function () {
+    return item.fieryRock.got > 0;
+  },
+  level: 100,
+  team: {
+    slot1: pkmn.megaAltaria,
+    slot1Moves: [
+      move.dragonDance.id,
+      move.hyperVoice.id,
+      move.dragonPulse.id,
+      move.earthquake.id,
+    ],
+  },
+  reward: [item.altarianite, pkmn.swablu],
+  category: 2,
+};
+
+areas.eventMegaBanette = {
+  rotation: 7,
+  type: `event`,
+  name: `Banette Mega-Showdown`,
+  background: `cave`,
+  icon: pkmn.megaBanette,
+  trainer: true,
+  encounter: true,
+  difficulty: tier3difficulty,
+  encounterEffect: function () {
+    item.fieryRock.got--;
+  },
+  unlockDescription: `Requires an <img src="img/items/fieryRock.png"> Fiery Rock to enter`,
+  unlockRequirement: function () {
+    return item.fieryRock.got > 0;
+  },
+  level: 100,
+  team: {
+    slot1: pkmn.megaBanette,
+    slot1Moves: [
+      move.shadowClaw.id,
+      move.nightSlash.id,
+      move.willOWisp.id,
+      move.poisonJab.id,
+    ],
+  },
+  reward: [item.banettite, pkmn.shuppet],
+  category: 2,
+};
+
+areas.eventMegaLopunny = {
+  rotation: 7,
+  type: `event`,
+  name: `Lopunny Mega-Showdown`,
+  background: `gym`,
+  icon: pkmn.megaLopunny,
+  trainer: true,
+  encounter: true,
+  difficulty: tier3difficulty,
+  encounterEffect: function () {
+    item.fieryRock.got--;
+  },
+  unlockDescription: `Requires an <img src="img/items/fieryRock.png"> Fiery Rock to enter`,
+  unlockRequirement: function () {
+    return item.fieryRock.got > 0;
+  },
+  level: 100,
+  team: {
+    slot1: pkmn.megaLopunny,
+    slot1Moves: [
+      move.closeCombat.id,
+      move.strength.id,
+      move.thunderPunch.id,
+      move.icePunch.id,
+    ],
+  },
+  reward: [item.lopunnite, pkmn.buneary],
+  category: 2,
+};
+
+//T4
+areas.eventMegaAudino = {
+  rotation: 7,
+  type: `event`,
+  name: `Audino Mega-Showdown`,
+  background: `gym`,
+  icon: pkmn.megaAudino,
+  trainer: true,
+  encounter: true,
+  difficulty: tier4difficulty,
+  encounterEffect: function () {
+    item.fieryRock.got -= 3;
+  },
+  unlockDescription: `Requires x3 <img src="img/items/fieryRock.png"> Fiery Rocks to enter`,
+  unlockRequirement: function () {
+    return item.fieryRock.got > 2;
+  },
+  level: 110,
+  team: {
+    slot1: pkmn.megaAudino,
+    slot1Moves: [
+      move.calmMind.id,
+      move.dazzlingGleam.id,
+      move.hyperVoice.id,
+      move.ironDefense.id,
+    ],
+  },
+  reward: [item.audinite, pkmn.audino],
+  category: 2,
+};
+
+areas.eventMegaAbsol = {
+  rotation: 7,
+  type: `event`,
+  name: `Absol Mega-Showdown`,
+  background: `mountain`,
+  icon: pkmn.megaAbsol,
+  trainer: true,
+  encounter: true,
+  difficulty: tier4difficulty,
+  encounterEffect: function () {
+    item.fieryRock.got -= 3;
+  },
+  unlockDescription: `Requires x3 <img src="img/items/fieryRock.png"> Fiery Rocks to enter`,
+  unlockRequirement: function () {
+    return item.fieryRock.got > 2;
+  },
+  level: 110,
+  team: {
+    slot1: pkmn.megaAbsol,
+    slot1Moves: [
+      move.swordsDance.id,
+      move.nightSlash.id,
+      move.psychoCut.id,
+      move.flamethrower.id,
+    ],
+  },
+  reward: [item.absolite, pkmn.absol],
+  category: 2,
+};
+
+areas.eventMegaSalamence = {
+  rotation: 7,
+  type: `event`,
+  name: `Salamence Mega-Showdown`,
+  background: `volcano`,
+  icon: pkmn.megaSalamence,
+  trainer: true,
+  encounter: true,
+  difficulty: tier4difficulty,
+  encounterEffect: function () {
+    item.fieryRock.got -= 3;
+  },
+  unlockDescription: `Requires x3 <img src="img/items/fieryRock.png"> Fiery Rocks to enter`,
+  unlockRequirement: function () {
+    return item.fieryRock.got > 2;
+  },
+  level: 110,
+  team: {
+    slot1: pkmn.megaSalamence,
+    slot1Moves: [
+      move.dragonDance.id,
+      move.dragonPulse.id,
+      move.hyperVoice.id,
+      move.earthquake.id,
+    ],
+  },
+  reward: [item.salamencite, pkmn.bagon],
+  category: 2,
+};
+
 //vs set----------------------------------------------------
 areas.vsYounsterBilly = {
   name: `Youngster Billy`,
@@ -7340,9 +7750,6 @@ t1: noMercy + stealth rocks + thematic
 t2: noMercy + stealth rocks + unerve/curse
 t3: noMercy + stealth rocks + pledge
 t4: omniboost + wonder guard
-
-
-
 
 */
 
