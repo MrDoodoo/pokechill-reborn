@@ -6,7 +6,6 @@ const evolutionLevel1 = 30;
 const evolutionLevel2 = 50;
 const evolutionLevel3 = 70;
 
-// 001 Bulbasaur → Ivysaur → Venusaur
 pkmn.bulbasaur = {
   type: ["grass", "poison"],
   bst: {
@@ -100,7 +99,6 @@ pkmn.venusaurGmax = {
   signature: move.frenzyPlant,
 };
 
-// 004 Charmander → Charmeleon → Charizard
 pkmn.charmander = {
   type: ["fire"],
   bst: {
@@ -211,7 +209,6 @@ pkmn.charizardGmax = {
   signature: move.flameBurst,
 };
 
-// 007 Squirtle → Wartortle → Blastoise
 pkmn.squirtle = {
   type: ["water"],
   bst: {
@@ -305,7 +302,6 @@ pkmn.blastoiseGmax = {
   hiddenAbility: ability.megaLauncher,
 };
 
-// 010 Caterpie → Metapod → Butterfree
 pkmn.caterpie = {
   type: ["bug"],
   bst: {
@@ -364,7 +360,6 @@ pkmn.butterfreeGmax = {
   hiddenAbility: ability.tintedLens,
 };
 
-// 013 Weedle → Kakuna → Beedrill
 pkmn.weedle = {
   type: ["bug", "poison"],
   bst: {
@@ -430,7 +425,6 @@ pkmn.megaBeedrill = {
   eggMove: move.toxicThread,
 };
 
-// 016 Pidgey → Pidgeotto → Pidgeot
 pkmn.pidgey = {
   type: ["normal", "flying"],
   bst: {
@@ -496,7 +490,6 @@ pkmn.megaPidgeot = {
   eggMove: move.meFirst,
 };
 
-// 019 Rattata → Raticate
 pkmn.rattata = {
   type: ["normal"],
   bst: {
@@ -555,7 +548,6 @@ pkmn.alolanRaticate = {
   hiddenAbility: ability.blackPelt,
 };
 
-// 021 Spearow → Fearow
 pkmn.spearow = {
   type: ["normal", "flying"],
   bst: {
@@ -585,7 +577,6 @@ pkmn.fearow = {
   hiddenAbility: ability.bigPecks,
 };
 
-// 023 Ekans → Arbok
 pkmn.ekans = {
   type: ["poison"],
   bst: {
@@ -614,8 +605,6 @@ pkmn.arbok = {
   },
   hiddenAbility: ability.intimidate,
 };
-
-// 025 Pichu → Pikachu → Raichu
 
 pkmn.spikyPichu = {
   type: ["electric"],
@@ -890,8 +879,6 @@ pkmn.megaRaichuY = {
   signature: move.voltTackle,
 };
 
-// 027 Sandshrew → Sandslash
-
 pkmn.sandshrew = {
   type: ["ground"],
   bst: {
@@ -953,7 +940,6 @@ pkmn.alolanSandslash = {
   signature: move.iceBall,
 };
 
-// 029 Nidoran♀ → Nidorina → Nidoqueen
 pkmn.nidoranF = {
   type: ["poison"],
   bst: {
@@ -1002,7 +988,6 @@ pkmn.nidoqueen = {
   eggMove: move.poisonTail,
 };
 
-// 032 Nidoran♂ → Nidorino → Nidoking
 pkmn.nidoranM = {
   type: ["poison"],
   bst: {
@@ -1048,7 +1033,6 @@ pkmn.nidoking = {
   hiddenAbility: ability.sheerForce,
 };
 
-// 035 Cleffa → Clefairy → Clefable
 pkmn.cleffa = {
   type: ["fairy"],
   bst: {
@@ -1111,7 +1095,6 @@ pkmn.megaClefable = {
   eggMove: move.lunarDance,
 };
 
-// 037 Vulpix → Ninetales
 pkmn.vulpix = {
   type: ["fire"],
   bst: {
@@ -1170,7 +1153,6 @@ pkmn.alolanNinetales = {
   hiddenAbility: ability.snowWarning,
 };
 
-// 039 Igglybuff → Jigglypuff → Wigglytuff
 pkmn.igglybuff = {
   type: ["normal", "fairy"],
   bst: {
@@ -1219,7 +1201,6 @@ pkmn.wigglytuff = {
   eggMove: move.eggBomb,
 };
 
-// 041 Zubat → Golbat → Crobat
 pkmn.zubat = {
   type: ["poison", "flying"],
   bst: {
@@ -1265,7 +1246,6 @@ pkmn.crobat = {
   hiddenAbility: ability.dauntingLook,
 };
 
-// 043 Oddish → Gloom → Vileplume / Bellossom
 pkmn.oddish = {
   type: ["grass", "poison"],
   bst: {
@@ -1331,7 +1311,6 @@ pkmn.bellossom = {
   signature: move.trailblaze,
 };
 
-// 046 Paras → Parasect
 pkmn.paras = {
   type: ["bug", "grass"],
   bst: {
@@ -1361,7 +1340,6 @@ pkmn.parasect = {
   hiddenAbility: ability.colorSpore,
 };
 
-// 048 Venonat → Venomoth
 pkmn.venonat = {
   type: ["bug", "poison"],
   bst: {
@@ -1391,7 +1369,6 @@ pkmn.venomoth = {
   hiddenAbility: ability.moltShed,
 };
 
-// 050 Diglett → Dugtrio
 pkmn.diglett = {
   type: ["ground"],
   bst: {
@@ -1448,7 +1425,6 @@ pkmn.alolanDugtrio = {
   },
 };
 
-// 052 Meowth → Persian / Galarian Meowth → Perrserker
 pkmn.meowth = {
   type: ["normal"],
   bst: {
@@ -1552,7 +1528,6 @@ pkmn.perrserker = {
   },
 };
 
-// 054 Psyduck → Golduck
 pkmn.psyduck = {
   type: ["water"],
   bst: {
@@ -1584,7 +1559,6 @@ pkmn.golduck = {
   signature: move.soak,
 };
 
-// 056 Mankey → Primeape
 pkmn.mankey = {
   type: ["fighting"],
   bst: {
@@ -1633,7 +1607,6 @@ pkmn.annihilape = {
   signature: move.rageFist,
 };
 
-// 058 Growlithe → Arcanine
 pkmn.growlithe = {
   type: ["fire"],
   bst: {
@@ -1696,7 +1669,6 @@ pkmn.hisuianArcanine = {
   signature: move.heatCrash,
 };
 
-// 060 Poliwag → Poliwhirl → Poliwrath / Politoed
 pkmn.poliwag = {
   type: ["water"],
   bst: {
@@ -1758,7 +1730,6 @@ pkmn.politoed = {
   hiddenAbility: ability.drizzle,
 };
 
-// 063 Abra → Kadabra → Alakazam
 pkmn.abra = {
   type: ["psychic"],
   bst: {
@@ -1824,7 +1795,6 @@ pkmn.megaAlakazam = {
   signature: move.kinesis,
 };
 
-// 066 Machop → Machoke → Machamp
 pkmn.machop = {
   type: ["fighting"],
   bst: {
@@ -1887,7 +1857,6 @@ pkmn.machampGmax = {
   signature: move.dynamicPunch,
 };
 
-// 069 Bellsprout → Weepinbell → Victreebel
 pkmn.bellsprout = {
   type: ["grass", "poison"],
   bst: {
@@ -1950,7 +1919,6 @@ pkmn.megaVictreebel = {
   eggMove: move.appleAcid,
 };
 
-// 072 Tentacool → Tentacruel
 pkmn.tentacool = {
   type: ["water", "poison"],
   bst: {
@@ -1982,7 +1950,6 @@ pkmn.tentacruel = {
   eggMove: move.venoshock,
 };
 
-// 074 Geodude → Graveler → Golem
 pkmn.geodude = {
   type: ["rock", "ground"],
   bst: {
@@ -2079,7 +2046,6 @@ pkmn.alolanGolem = {
   eggMove: move.auraWheel,
 };
 
-// 077 Ponyta → Rapidash
 pkmn.ponyta = {
   type: ["fire"],
   bst: {
@@ -2138,7 +2104,6 @@ pkmn.galarianRapidash = {
   hiddenAbility: ability.pastelVeil,
 };
 
-// 079 Slowpoke → Slowbro / Slowking
 pkmn.slowpoke = {
   type: ["water", "psychic"],
   bst: {
@@ -2245,7 +2210,6 @@ pkmn.galarianSlowking = {
   },
 };
 
-// 081 Magnemite → Magneton → Magnezone
 pkmn.magnemite = {
   type: ["electric", "steel"],
   bst: {
@@ -2291,7 +2255,6 @@ pkmn.magnezone = {
   hiddenAbility: ability.levitate,
 };
 
-// 083 Farfetch'd / Galarian Farfetch'd → Sirfetch'd
 pkmn.farfetchd = {
   type: ["normal", "flying"],
   bst: {
@@ -2335,7 +2298,6 @@ pkmn.sirfetchd = {
   signature: move.meteorAssault,
 };
 
-// 084 Doduo → Dodrio
 pkmn.doduo = {
   type: ["normal", "flying"],
   bst: {
@@ -2367,7 +2329,6 @@ pkmn.dodrio = {
   signature: move.triAttack,
 };
 
-// 086 Seel → Dewgong
 pkmn.seel = {
   type: ["water"],
   bst: {
@@ -2397,7 +2358,6 @@ pkmn.dewgong = {
   hiddenAbility: ability.moistPelt,
 };
 
-// 088 Grimer → Muk
 pkmn.grimer = {
   type: ["poison"],
   bst: {
@@ -2458,7 +2418,6 @@ pkmn.alolanMuk = {
   hiddenAbility: ability.powerOfAlchemy,
 };
 
-// 090 Shellder → Cloyster
 pkmn.shellder = {
   type: ["water"],
   bst: {
@@ -2490,7 +2449,6 @@ pkmn.cloyster = {
   signature: move.clamp,
 };
 
-// 092 Gastly → Haunter → Gengar
 pkmn.gastly = {
   type: ["ghost", "poison"],
   bst: {
@@ -2565,7 +2523,6 @@ pkmn.gengarGmax = {
   hiddenAbility: ability.somberField,
 };
 
-// 095 Onix
 pkmn.onix = {
   type: ["rock", "ground"],
   bst: {
@@ -2611,7 +2568,6 @@ pkmn.megaSteelix = {
   hiddenAbility: ability.sheerForce,
 };
 
-// 096 Drowzee → Hypno
 pkmn.drowzee = {
   type: ["psychic"],
   bst: {
@@ -2641,7 +2597,6 @@ pkmn.hypno = {
   hiddenAbility: ability.sinisterGuard,
 };
 
-// 098 Krabby → Kingler
 pkmn.krabby = {
   type: ["water"],
   bst: {
@@ -2687,7 +2642,6 @@ pkmn.kinglerGmax = {
   signature: move.crabhammer,
 };
 
-// 100 Voltorb → Electrode
 pkmn.voltorb = {
   type: ["electric"],
   bst: {
@@ -2750,7 +2704,6 @@ pkmn.hisuianElectrode = {
   signature: move.chloroblast,
 };
 
-// 102 Exeggcute → Exeggutor
 pkmn.exeggcute = {
   type: ["grass", "psychic"],
   bst: {
@@ -2796,7 +2749,6 @@ pkmn.alolanExeggutor = {
   eggMove: move.barrage,
 };
 
-// 104 Cubone → Marowak
 pkmn.cubone = {
   type: ["ground"],
   bst: {
@@ -2841,7 +2793,6 @@ pkmn.alolanMarowak = {
   hiddenAbility: ability.dancer,
 };
 
-// 236-106-107-237 Tyrogue → Hitmonlee / Hitmonchan / Hitmontop
 pkmn.tyrogue = {
   type: ["fighting"],
   bst: {
@@ -2901,7 +2852,6 @@ pkmn.hitmontop = {
   hiddenAbility: ability.contrary,
 };
 
-// 108 Lickitung → Lickylicky
 pkmn.lickitung = {
   type: ["normal"],
   bst: {
@@ -2931,7 +2881,6 @@ pkmn.lickilicky = {
   hiddenAbility: ability.thickFat,
 };
 
-// 109 Koffing → Weezing
 pkmn.koffing = {
   type: ["poison"],
   bst: {
@@ -2974,7 +2923,6 @@ pkmn.galarianWeezing = {
   hiddenAbility: ability.aromaVeil,
 };
 
-// 111 Rhyhorn → Rhydon → Rhyperior
 pkmn.rhyhorn = {
   type: ["ground", "rock"],
   bst: {
@@ -3023,7 +2971,6 @@ pkmn.rhyperior = {
   signature: move.rockWrecker,
 };
 
-// 113 Happiny → Chansey → Blissey
 pkmn.happiny = {
   type: ["normal"],
   bst: {
@@ -3072,7 +3019,6 @@ pkmn.blissey = {
   signature: move.eggBomb,
 };
 
-// 114 Tangela → Tangrowth
 pkmn.tangela = {
   type: ["grass"],
   bst: {
@@ -3117,7 +3063,6 @@ pkmn.tangrowth = {
   hiddenAbility: ability.growthAbsorb,
 };
 
-// 115 Kangaskhan
 pkmn.kangaskhan = {
   type: ["normal"],
   bst: {
@@ -3149,7 +3094,6 @@ pkmn.megaKangaskhan = {
   eggMove: move.headCharge,
 };
 
-// 116 Horsea → Seadra → Kingdra
 pkmn.horsea = {
   type: ["water"],
   bst: {
@@ -3198,7 +3142,6 @@ pkmn.kingdra = {
   hiddenAbility: ability.reckless,
 };
 
-// 118 Goldeen → Seaking
 pkmn.goldeen = {
   type: ["water"],
   bst: {
@@ -3228,7 +3171,6 @@ pkmn.seaking = {
   hiddenAbility: ability.swiftSwim,
 };
 
-// 120 Staryu → Starmie
 pkmn.staryu = {
   type: ["water"],
   bst: {
@@ -3273,7 +3215,6 @@ pkmn.megaStarmie = {
   signature: move.camouflage,
 };
 
-// 122 Mime Jr. → Mr. Mime / Galarian Mr. Mime → Mr. Rime
 pkmn.mimejr = {
   rename: `mimeJr`,
   type: ["psychic", "fairy"],
@@ -3336,7 +3277,6 @@ pkmn.mrRime = {
   signature: move.mimic,
 };
 
-// 123 Scyther → Scizor / Kleavor
 pkmn.scyther = {
   type: ["bug", "flying"],
   bst: {
@@ -3394,7 +3334,6 @@ pkmn.kleavor = {
   },
 };
 
-// 124 Smoochum → Jynx
 pkmn.smoochum = {
   type: ["ice", "psychic"],
   bst: {
@@ -3426,7 +3365,6 @@ pkmn.jynx = {
   signature: move.lovelyKiss,
 };
 
-// 125 Elekid → Electabuzz → Electivire
 pkmn.elekid = {
   type: ["electric"],
   bst: {
@@ -3472,7 +3410,6 @@ pkmn.electivire = {
   hiddenAbility: ability.voltAbsorb,
 };
 
-// 126 Magby → Magmar → Magmortar
 pkmn.magby = {
   type: ["fire"],
   bst: {
@@ -3521,7 +3458,6 @@ pkmn.magmortar = {
   eggMove: move.armorCannon,
 };
 
-// 127 Pinsir
 pkmn.pinsir = {
   type: ["bug"],
   bst: {
@@ -3553,7 +3489,6 @@ pkmn.megaPinsir = {
   eggMove: move.camouflage,
 };
 
-// 128 Tauros
 pkmn.tauros = {
   type: ["normal"],
   bst: {
@@ -3606,7 +3541,6 @@ pkmn.taurosAqua = {
   hiddenAbility: ability.angerPoint,
 };
 
-// 129 Magikarp → Gyarados
 pkmn.magikarp = {
   type: ["water"],
   bst: {
@@ -3731,7 +3665,6 @@ pkmn.megaGyarados = {
   hiddenAbility: ability.intimidate,
 };
 
-// 131 Lapras
 pkmn.lapras = {
   type: ["water", "ice"],
   bst: {
@@ -3760,7 +3693,6 @@ pkmn.laprasGmax = {
   eggMove: move.sparklingAria,
 };
 
-// 132 Ditto
 pkmn.ditto = {
   type: ["normal"],
   bst: {
@@ -3775,7 +3707,6 @@ pkmn.ditto = {
   lore: `Believed to be the result of an attempt to replicate the ancestor of all Pokémon. The experiment did not achieve its intended goal, and the creature that emerged was deemed a failure.`,
 };
 
-// 133 Eevee → Vaporeon / Jolteon / Flareon / Espeon / Umbreon / Leafeon / Glaceon / Sylveon
 pkmn.eevee = {
   type: ["normal"],
   bst: {
@@ -3923,7 +3854,6 @@ pkmn.sylveon = {
   hiddenAbility: ability.pixilate,
 };
 
-// 137 Porygon → Porygon2 → Porygon-Z
 pkmn.porygon = {
   type: ["normal"],
   bst: {
@@ -3972,7 +3902,6 @@ pkmn.porygonZ = {
   signature: move.conversion,
 };
 
-// 138 Omanyte → Omastar
 pkmn.omanyte = {
   type: ["rock", "water"],
   bst: {
@@ -4004,7 +3933,6 @@ pkmn.omastar = {
   eggMove: move.sparklingAria,
 };
 
-// 140 Kabuto → Kabutops
 pkmn.kabuto = {
   type: ["rock", "water"],
   bst: {
@@ -4034,7 +3962,6 @@ pkmn.kabutops = {
   hiddenAbility: ability.stoned,
 };
 
-// 142 Aerodactyl
 pkmn.aerodactyl = {
   type: ["rock", "flying"],
   bst: {
@@ -4064,7 +3991,6 @@ pkmn.megaAerodactyl = {
   hiddenAbility: ability.toughClaws,
 };
 
-// 143 Munchlax → Snorlax
 pkmn.munchlax = {
   type: ["normal"],
   bst: {
@@ -4110,7 +4036,6 @@ pkmn.snorlaxGmax = {
   signature: move.bellyDrum,
 };
 
-// 144 Articuno
 pkmn.articuno = {
   type: ["ice", "flying"],
   bst: {
@@ -4140,7 +4065,6 @@ pkmn.galarianArticuno = {
   signature: move.freezingGlare,
 };
 
-// 145 Zapdos
 pkmn.zapdos = {
   type: ["electric", "flying"],
   bst: {
@@ -4170,7 +4094,6 @@ pkmn.galarianZapdos = {
   signature: move.thunderousKick,
 };
 
-// 146 Moltres
 pkmn.moltres = {
   type: ["fire", "flying"],
   bst: {
@@ -4200,7 +4123,6 @@ pkmn.galarianMoltres = {
   signature: move.fieryWrath,
 };
 
-// 147 Dratini → Dragonair → Dragonite
 pkmn.dratini = {
   type: ["dragon"],
   bst: {
@@ -4262,7 +4184,6 @@ pkmn.megaDragonite = {
   hiddenAbility: ability.multiscale,
 };
 
-// 150 Mewtwo
 pkmn.mewtwo = {
   type: ["psychic"],
   bst: {
@@ -4303,7 +4224,6 @@ pkmn.megaMewtwoY = {
   },
 };
 
-// 151 Mew
 pkmn.mew = {
   type: ["psychic"],
   bst: {
@@ -4318,7 +4238,6 @@ pkmn.mew = {
   lore: `The origin from which all Pokemon as we know trace their beginnings. Its form, small and gentle, carries the memory of every creature that would follow.`,
 };
 
-// 152 Chikorita → Bayleef → Meganium
 pkmn.chikorita = {
   type: ["grass"],
   bst: {
@@ -4381,7 +4300,6 @@ pkmn.megaMeganium = {
   eggMove: move.floralHealing,
 };
 
-// 155 Cyndaquil → Quilava → Typhlosion
 pkmn.cyndaquil = {
   type: ["fire"],
   bst: {
@@ -4442,7 +4360,6 @@ pkmn.hisuianTyphlosion = {
   },
 };
 
-// 158 Totodile → Croconaw → Feraligatr
 pkmn.totodile = {
   type: ["water"],
   bst: {
@@ -4500,7 +4417,6 @@ pkmn.megaFeraligatr = {
   },
 };
 
-// 161 Sentret → Furret
 pkmn.sentret = {
   type: ["normal"],
   bst: {
@@ -4532,7 +4448,6 @@ pkmn.furret = {
   hiddenAbility: ability.costar,
 };
 
-// 163 Hoothoot → Noctowl
 pkmn.hoothoot = {
   type: ["normal", "flying"],
   bst: {
@@ -4562,7 +4477,6 @@ pkmn.noctowl = {
   hiddenAbility: ability.tintedLens,
 };
 
-// 165 Ledyba → Ledian
 pkmn.ledyba = {
   type: ["bug", "flying"],
   bst: {
@@ -4594,7 +4508,6 @@ pkmn.ledian = {
   signature: move.cometPunch,
 };
 
-// 167 Spinarak → Ariados
 pkmn.spinarak = {
   type: ["bug", "poison"],
   bst: {
@@ -4626,9 +4539,6 @@ pkmn.ariados = {
   hiddenAbility: ability.moltShed,
 };
 
-// 169 Crobat
-
-// 170 Chinchou → Lanturn
 pkmn.chinchou = {
   type: ["water", "electric"],
   bst: {
@@ -4660,11 +4570,6 @@ pkmn.lanturn = {
   eggMove: move.tailGlow,
 };
 
-// 172 Pichu
-// 173 Cleffa
-// 174 Igglybuff
-
-// 175 Togepi → Togetic → Togekiss
 pkmn.togepi = {
   type: ["fairy"],
   bst: {
@@ -4694,7 +4599,7 @@ pkmn.togetic = {
   },
   evolve: function () {
     return {
-      1: { pkmn: pkmn.togekiss, item: item.shinyStone /*o equivalente*/ },
+      1: { pkmn: pkmn.togekiss, item: item.shinyStone },
     };
   },
   hiddenAbility: ability.sereneGrace,
@@ -4715,7 +4620,6 @@ pkmn.togekiss = {
   signature: move.metronome,
 };
 
-// 177 Natu → Xatu
 pkmn.natu = {
   type: ["psychic", "flying"],
   bst: {
@@ -4747,7 +4651,6 @@ pkmn.xatu = {
   hiddenAbility: ability.neuroforce,
 };
 
-// 179 Mareep → Flaafy → Ampharos
 pkmn.mareep = {
   type: ["electric"],
   bst: {
@@ -4813,9 +4716,6 @@ pkmn.megaAmpharos = {
   eggMove: move.zapCannon,
 };
 
-// 182 Bellossom
-
-// 183 Azurill → Marill → Azumarill
 pkmn.azurill = {
   type: ["normal", "fairy"],
   bst: {
@@ -4861,7 +4761,6 @@ pkmn.azumarill = {
   hiddenAbility: ability.hugePower,
 };
 
-// 185 Bonsly → Sudowoodo
 pkmn.bonsly = {
   type: ["rock"],
   bst: {
@@ -4891,9 +4790,6 @@ pkmn.sudowoodo = {
   eggMove: move.mimic,
 };
 
-// 186 Politoed
-
-// 187 Hoppip → Skiploom → Jumpluff
 pkmn.hoppip = {
   type: ["grass", "flying"],
   bst: {
@@ -4942,7 +4838,6 @@ pkmn.jumpluff = {
   eggMove: move.aeroblast,
 };
 
-// 190 Aipom → Ambipom
 pkmn.aipom = {
   type: ["normal"],
   bst: {
@@ -4974,7 +4869,6 @@ pkmn.ambipom = {
   eggMove: move.batonPass,
 };
 
-// 191 Sunkern → Sunflora
 pkmn.sunkern = {
   type: ["grass"],
   bst: {
@@ -5004,7 +4898,6 @@ pkmn.sunflora = {
   hiddenAbility: ability.flowerVeil,
 };
 
-// 193 Yanma → Yanmega
 pkmn.yanma = {
   type: ["bug", "flying"],
   bst: {
@@ -5036,7 +4929,6 @@ pkmn.yanmega = {
   eggMove: move.braveBird,
 };
 
-// 194 Wooper → Quagsire / Paldean Wooper → Clodsire
 pkmn.wooper = {
   type: ["water", "ground"],
   bst: {
@@ -5097,10 +4989,6 @@ pkmn.clodsire = {
   hiddenAbility: ability.gooey,
 };
 
-// 196 Espeon
-// 197 Umbreon
-
-// 198 Murkrow → Honchkrow
 pkmn.murkrow = {
   type: ["dark", "flying"],
   bst: {
@@ -5130,9 +5018,6 @@ pkmn.honchkrow = {
   hiddenAbility: ability.prankster,
 };
 
-// 199 Slowking
-
-// 200 Misdreavus → Mismagius
 pkmn.misdreavus = {
   type: ["ghost"],
   bst: {
@@ -5162,7 +5047,6 @@ pkmn.mismagius = {
   hiddenAbility: ability.levitate,
 };
 
-// 201 Unown
 pkmn.unownA = {
   type: ["psychic"],
   bst: {
@@ -5523,7 +5407,6 @@ pkmn.unownQuestion = {
   hiddenAbility: ability.unaware,
 };
 
-// 202 Wynaut → Wobbuffet
 pkmn.wynaut = {
   type: ["psychic"],
   bst: {
@@ -5553,7 +5436,6 @@ pkmn.wobbuffet = {
   hiddenAbility: ability.unaware,
 };
 
-// 203 Girafarig → Farigiraf
 pkmn.girafarig = {
   type: ["normal", "psychic"],
   bst: {
@@ -5584,7 +5466,6 @@ pkmn.farigiraf = {
   hiddenAbility: ability.neuroforce,
 };
 
-// 204 Pineco → Forretress
 pkmn.pineco = {
   type: ["bug"],
   bst: {
@@ -5614,7 +5495,6 @@ pkmn.forretress = {
   hiddenAbility: ability.stamina,
 };
 
-// 206 Dunsparce → Dudunsparce
 pkmn.dunsparce = {
   type: ["normal"],
   bst: {
@@ -5655,7 +5535,6 @@ pkmn.dududunsparce = {
   signature: move.hyperDrill,
 };
 
-// 207 Gligar → Gliscor
 pkmn.gligar = {
   type: ["ground", "flying"],
   bst: {
@@ -5685,9 +5564,6 @@ pkmn.gliscor = {
   hiddenAbility: ability.toxicBoost,
 };
 
-// 208 Steelix
-
-// 209 Snubbull → Granbull
 pkmn.snubbull = {
   type: ["fairy"],
   bst: {
@@ -5717,7 +5593,6 @@ pkmn.granbull = {
   hiddenAbility: ability.pixiePelt,
 };
 
-// 211 Qwilfish / Hisuian Qwilfish → Overqwil
 pkmn.qwilfish = {
   type: ["water", "poison"],
   bst: {
@@ -5763,9 +5638,6 @@ pkmn.overqwil = {
   hiddenAbility: ability.merciless,
 };
 
-// 212 Scizor
-
-// 213 Shuckle
 pkmn.shuckle = {
   type: ["bug", "rock"],
   bst: {
@@ -5780,7 +5652,6 @@ pkmn.shuckle = {
   eggMove: move.batonPass,
 };
 
-// 214 Heracross
 pkmn.heracross = {
   type: ["bug", "fighting"],
   bst: {
@@ -5812,7 +5683,6 @@ pkmn.megaHeracross = {
   signature: move.megahorn,
 };
 
-// 215 Sneasel → Weavile / Hisuian Sneasel → Sneasler
 pkmn.sneasel = {
   type: ["dark", "ice"],
   bst: {
@@ -5874,7 +5744,6 @@ pkmn.hisuianSneasler = {
   hiddenAbility: ability.merciless,
 };
 
-// 216 Teddiursa → Ursaring → Ursaluna
 pkmn.teddiursa = {
   type: ["normal"],
   bst: {
@@ -5930,7 +5799,6 @@ pkmn.ursalunaBloodmoon = {
   },
 };
 
-// 218 Slugma → Magcargo
 pkmn.slugma = {
   type: ["fire"],
   bst: {
@@ -5960,7 +5828,6 @@ pkmn.magcargo = {
   hiddenAbility: ability.flameBody,
 };
 
-// 220 Swinub → Piloswine → Mamoswine
 pkmn.swinub = {
   type: ["ice", "ground"],
   bst: {
@@ -6009,7 +5876,6 @@ pkmn.mamoswine = {
   eggMove: move.highHorsepower,
 };
 
-// 222 Corsola / Galarian Corsola → Cursola
 pkmn.corsola = {
   type: ["water", "rock"],
   bst: {
@@ -6050,7 +5916,6 @@ pkmn.cursola = {
   },
 };
 
-// 223 Remoraid → Octillery
 pkmn.remoraid = {
   type: ["water"],
   bst: {
@@ -6080,7 +5945,6 @@ pkmn.octillery = {
   hiddenAbility: ability.moody,
 };
 
-// 225 Delibird
 pkmn.delibird = {
   type: ["ice", "flying"],
   bst: {
@@ -6093,7 +5957,6 @@ pkmn.delibird = {
   },
 };
 
-// 226 Mantyke → Mantine
 pkmn.mantyke = {
   type: ["water", "flying"],
   bst: {
@@ -6123,7 +5986,6 @@ pkmn.mantine = {
   hiddenAbility: ability.waterAbsorb,
 };
 
-// 227 Skarmory
 pkmn.skarmory = {
   type: ["steel", "flying"],
   bst: {
@@ -6148,7 +6010,6 @@ pkmn.megaSkarmory = {
   },
 };
 
-// 228 Houndour → Houndoom
 pkmn.houndour = {
   type: ["dark", "fire"],
   bst: {
@@ -6197,9 +6058,6 @@ pkmn.megaHoundoom = {
   eggMove: move.howl,
 };
 
-// 230 Kingdra
-
-// 231 Phanpy → Donphan
 pkmn.phanpy = {
   type: ["ground"],
   bst: {
@@ -6227,9 +6085,6 @@ pkmn.donphan = {
   },
 };
 
-// 233 Porygon2
-
-// 234 Stantler → Wyrdeer
 pkmn.stantler = {
   type: ["normal"],
   bst: {
@@ -6257,7 +6112,6 @@ pkmn.wyrdeer = {
   hiddenAbility: ability.pixiePelt,
 };
 
-// 235 Smeargle
 pkmn.smeargle = {
   type: ["normal"],
   bst: {
@@ -6272,13 +6126,6 @@ pkmn.smeargle = {
   signature: move.sketch,
 };
 
-// 236 Tyrogue
-// 237 Hitmontop
-// 238 Smoochum
-// 239 Elekid
-// 240 Magby
-
-// 241 Miltank
 pkmn.miltank = {
   type: ["normal"],
   bst: {
@@ -6292,9 +6139,6 @@ pkmn.miltank = {
   hiddenAbility: ability.stamina,
 };
 
-// 242 Blissey
-
-// 243 Raikou
 pkmn.raikou = {
   type: ["electric"],
   bst: {
@@ -6308,7 +6152,6 @@ pkmn.raikou = {
   eggMove: move.charge,
 };
 
-// 244 Entei
 pkmn.entei = {
   type: ["fire"],
   bst: {
@@ -6321,7 +6164,6 @@ pkmn.entei = {
   },
 };
 
-// 245 Suicune
 pkmn.suicune = {
   type: ["water"],
   bst: {
@@ -6334,7 +6176,6 @@ pkmn.suicune = {
   },
 };
 
-// 246 Larvitar → Pupitar → Tyranitar
 pkmn.larvitar = {
   type: ["rock", "ground"],
   bst: {
@@ -6396,7 +6237,6 @@ pkmn.megaTyranitar = {
   hiddenAbility: ability.sandStream,
 };
 
-// 249 Lugia
 pkmn.lugia = {
   type: ["psychic", "flying"],
   bst: {
@@ -6410,7 +6250,6 @@ pkmn.lugia = {
   signature: move.aeroblast,
 };
 
-// 250 Ho-oh
 pkmn.hooh = {
   type: ["fire", "flying"],
   bst: {
@@ -6424,7 +6263,6 @@ pkmn.hooh = {
   signature: move.sacredFire,
 };
 
-// 251 Celebi
 pkmn.celebi = {
   type: ["psychic", "grass"],
   bst: {
@@ -6439,7 +6277,6 @@ pkmn.celebi = {
   lore: `Traveling through time and appearing where the past and future meet, it preserves the natural order, ensuring that the cycles of life, growth, and seasons continue uninterrupted.`,
 };
 
-// 252 Treecko → Grovyle → Sceptile
 pkmn.treecko = {
   type: ["grass"],
   bst: {
@@ -6505,7 +6342,6 @@ pkmn.megaSceptile = {
   eggMove: move.dragonDarts,
 };
 
-// 255 Torchic → Combusken → Blaziken
 pkmn.torchic = {
   type: ["fire"],
   bst: {
@@ -6571,7 +6407,6 @@ pkmn.megaBlaziken = {
   hiddenAbility: ability.speedBoost,
 };
 
-// 258 Mudkip → Marshtomp → Swampert
 pkmn.mudkip = {
   type: ["water"],
   bst: {
@@ -6637,7 +6472,6 @@ pkmn.megaSwampert = {
   eggMove: move.crabhammer,
 };
 
-// 261 Poochyena → Mightyena
 pkmn.poochyena = {
   type: ["dark"],
   bst: {
@@ -6669,7 +6503,6 @@ pkmn.mightyena = {
   signature: move.howl,
 };
 
-// 263 Zigzagoon → Linoone / Galarian Zigzagoon → Galarian Linoone → Obstagoon
 pkmn.zigzagoon = {
   type: ["normal"],
   bst: {
@@ -6742,7 +6575,6 @@ pkmn.obstagoon = {
   hiddenAbility: ability.guts,
 };
 
-// 265 Wurmple → Silcoon / Cascoon → Beautifly / Dustox
 pkmn.wurmple = {
   type: ["bug"],
   bst: {
@@ -6820,7 +6652,6 @@ pkmn.dustox = {
   hiddenAbility: ability.moltShed,
 };
 
-// 270 Lotad → Lombre → Ludicolo
 pkmn.lotad = {
   type: ["water", "grass"],
   bst: {
@@ -6869,7 +6700,6 @@ pkmn.ludicolo = {
   eggMove: move.aquaStep,
 };
 
-// 273 Seedot → Nuzleaf → Shiftry
 pkmn.seedot = {
   type: ["grass"],
   bst: {
@@ -6915,7 +6745,6 @@ pkmn.shiftry = {
   hiddenAbility: ability.windRider,
 };
 
-// 276 Taillow → Swellow
 pkmn.taillow = {
   type: ["normal", "flying"],
   bst: {
@@ -6945,7 +6774,6 @@ pkmn.swellow = {
   hiddenAbility: ability.guts,
 };
 
-// 278 Wingull → Pelipper
 pkmn.wingull = {
   type: ["water", "flying"],
   bst: {
@@ -6975,7 +6803,6 @@ pkmn.pelipper = {
   hiddenAbility: ability.drizzle,
 };
 
-// 280 Ralts → Kirlia → Gardevoir / Gallade
 pkmn.ralts = {
   type: ["psychic", "fairy"],
   bst: {
@@ -7069,7 +6896,6 @@ pkmn.megaGallade = {
   hiddenAbility: ability.supremeOverlord,
 };
 
-// 283 Surskit → Masquerain
 pkmn.surskit = {
   type: ["bug", "water"],
   bst: {
@@ -7099,7 +6925,6 @@ pkmn.masquerain = {
   hiddenAbility: ability.galeWings,
 };
 
-// 285 Shroomish → Breloom
 pkmn.shroomish = {
   type: ["grass"],
   bst: {
@@ -7129,7 +6954,6 @@ pkmn.breloom = {
   hiddenAbility: ability.colorSpore,
 };
 
-// 287 Slakoth → Vigoroth → Slaking
 pkmn.slakoth = {
   type: ["normal"],
   bst: {
@@ -7175,7 +6999,6 @@ pkmn.slaking = {
   hiddenAbility: ability.sheerForce,
 };
 
-// 290 Nincada → Ninjask / Shedinja
 pkmn.nincada = {
   type: ["bug", "ground"],
   bst: {
@@ -7222,7 +7045,6 @@ pkmn.shedinja = {
   eggMove: move.shadowForce,
 };
 
-// 293 Whismur → Loudred → Exploud
 pkmn.whismur = {
   type: ["normal"],
   bst: {
@@ -7271,7 +7093,6 @@ pkmn.exploud = {
   hiddenAbility: ability.cacophony,
 };
 
-// 296 Makuhita → Hariyama
 pkmn.makuhita = {
   type: ["fighting"],
   bst: {
@@ -7301,9 +7122,6 @@ pkmn.hariyama = {
   hiddenAbility: ability.noGuard,
 };
 
-// 298 Azurill
-
-// 299 Nosepass → Probopass
 pkmn.nosepass = {
   type: ["rock"],
   bst: {
@@ -7333,7 +7151,6 @@ pkmn.probopass = {
   hiddenAbility: ability.sandyPelt,
 };
 
-// 300 Skitty → Delcatty
 pkmn.skitty = {
   type: ["normal"],
   bst: {
@@ -7363,7 +7180,6 @@ pkmn.delcatty = {
   hiddenAbility: ability.normalize,
 };
 
-// 302 Sableye
 pkmn.sableye = {
   type: ["dark", "ghost"],
   bst: {
@@ -7395,7 +7211,6 @@ pkmn.megaSableye = {
   eggMove: move.trickOrTreat,
 };
 
-// 303 Mawile
 pkmn.mawile = {
   type: ["steel", "fairy"],
   bst: {
@@ -7425,7 +7240,6 @@ pkmn.megaMawile = {
   hiddenAbility: ability.strongJaw,
 };
 
-// 304 Aron → Lairon → Aggron
 pkmn.aron = {
   type: ["steel", "rock"],
   bst: {
@@ -7491,7 +7305,6 @@ pkmn.megaAggron = {
   eggMove: move.noRetreat,
 };
 
-// 307 Meditite → Medicham
 pkmn.meditite = {
   type: ["fighting", "psychic"],
   bst: {
@@ -7539,7 +7352,6 @@ pkmn.megaMedicham = {
   signature: move.hiJumpKick,
 };
 
-// 309 Electrike → Manectric
 pkmn.electrike = {
   type: ["electric"],
   bst: {
@@ -7588,7 +7400,6 @@ pkmn.megaManectric = {
   eggMove: move.charge,
 };
 
-// 311 Plusle
 pkmn.plusle = {
   type: ["electric"],
   bst: {
@@ -7603,7 +7414,6 @@ pkmn.plusle = {
   hiddenAbility: ability.spikyPelt,
 };
 
-// 312 Minun
 pkmn.minun = {
   type: ["electric"],
   bst: {
@@ -7618,7 +7428,6 @@ pkmn.minun = {
   hiddenAbility: ability.hyperconductor,
 };
 
-// 313 Volbeat
 pkmn.volbeat = {
   type: ["bug"],
   bst: {
@@ -7633,7 +7442,6 @@ pkmn.volbeat = {
   eggMove: move.lunarDance,
 };
 
-// 314 Illumise
 pkmn.illumise = {
   type: ["bug"],
   bst: {
@@ -7648,9 +7456,6 @@ pkmn.illumise = {
   signature: move.tailGlow,
 };
 
-// 315 Roselia
-
-// 316 Gulpin → Swalot
 pkmn.gulpin = {
   type: ["poison"],
   bst: {
@@ -7682,7 +7487,6 @@ pkmn.swalot = {
   signature: move.venoshock,
 };
 
-// 318 Carvanha → Sharpedo
 pkmn.carvanha = {
   type: ["water", "dark"],
   bst: {
@@ -7728,7 +7532,6 @@ pkmn.megaSharpedo = {
   hiddenAbility: ability.strongJaw,
 };
 
-// 320 Wailmer → Wailord
 pkmn.wailmer = {
   type: ["water"],
   bst: {
@@ -7758,7 +7561,6 @@ pkmn.wailord = {
   hiddenAbility: ability.stamina,
 };
 
-// 322 Numel → Camerupt
 pkmn.numel = {
   type: ["fire", "ground"],
   bst: {
@@ -7807,7 +7609,6 @@ pkmn.megaCamerupt = {
   eggMove: move.sacredFire,
 };
 
-// 324 Torkoal
 pkmn.torkoal = {
   type: ["fire"],
   bst: {
@@ -7822,7 +7623,6 @@ pkmn.torkoal = {
   eggMove: ability.weatherBall,
 };
 
-// 325 Spoink → Grumpig
 pkmn.spoink = {
   type: ["psychic"],
   bst: {
@@ -7852,7 +7652,6 @@ pkmn.grumpig = {
   hiddenAbility: ability.espilate,
 };
 
-// 327 Spinda
 pkmn.spinda = {
   type: ["normal"],
   bst: {
@@ -7867,7 +7666,6 @@ pkmn.spinda = {
   eggMove: move.metronome,
 };
 
-// 328 Trapinch → Vibrava → Flygon
 pkmn.trapinch = {
   type: ["ground"],
   bst: {
@@ -7916,7 +7714,6 @@ pkmn.flygon = {
   eggMove: move.dragonEnergy,
 };
 
-// 331 Cacnea → Cacturne
 pkmn.cacnea = {
   type: ["grass"],
   bst: {
@@ -7948,7 +7745,6 @@ pkmn.cacturne = {
   signature: move.needleArm,
 };
 
-// 333 Swablu → Altaria
 pkmn.swablu = {
   type: ["normal", "flying"],
   bst: {
@@ -7997,7 +7793,6 @@ pkmn.megaAltaria = {
   eggMove: move.aromaticMist,
 };
 
-// 335 Zangoose
 pkmn.zangoose = {
   type: ["normal"],
   bst: {
@@ -8011,7 +7806,6 @@ pkmn.zangoose = {
   hiddenAbility: ability.toxicBoost,
 };
 
-// 336 Seviper
 pkmn.seviper = {
   type: ["poison"],
   bst: {
@@ -8025,7 +7819,6 @@ pkmn.seviper = {
   signature: move.poisonTail,
 };
 
-// 337 Lunatone
 pkmn.lunatone = {
   type: ["rock", "psychic"],
   bst: {
@@ -8040,7 +7833,6 @@ pkmn.lunatone = {
   eggMove: move.lunarDance,
 };
 
-// 338 Solrock
 pkmn.solrock = {
   type: ["rock", "psychic"],
   bst: {
@@ -8054,7 +7846,6 @@ pkmn.solrock = {
   hiddenAbility: ability.levitate,
 };
 
-// 339 Barboach → Whiscash
 pkmn.barboach = {
   type: ["water", "ground"],
   bst: {
@@ -8084,7 +7875,6 @@ pkmn.whiscash = {
   hiddenAbility: ability.rainDish,
 };
 
-// 341 Corphish → Crawdaunt
 pkmn.corphish = {
   type: ["water"],
   bst: {
@@ -8112,7 +7902,6 @@ pkmn.crawdaunt = {
   },
 };
 
-// 343 Baltoy → Claydol
 pkmn.baltoy = {
   type: ["ground", "psychic"],
   bst: {
@@ -8142,7 +7931,6 @@ pkmn.claydol = {
   hiddenAbility: ability.powerOfAlchemy,
 };
 
-// 345 Lileep → Cradily
 pkmn.lileep = {
   type: ["rock", "grass"],
   bst: {
@@ -8174,7 +7962,6 @@ pkmn.cradily = {
   eggMove: move.chloroblast,
 };
 
-// 347 Anorith → Armaldo
 pkmn.anorith = {
   type: ["rock", "bug"],
   bst: {
@@ -8204,7 +7991,6 @@ pkmn.armaldo = {
   eggMove: move.rockWrecker,
 };
 
-// 349 Feebas → Milotic
 pkmn.feebas = {
   type: ["water"],
   bst: {
@@ -8234,7 +8020,6 @@ pkmn.milotic = {
   hiddenAbility: ability.multiscale,
 };
 
-// 351 Castform
 pkmn.castform = {
   type: ["normal"],
   bst: {
@@ -8289,7 +8074,6 @@ pkmn.castformSnowy = {
   signature: move.weatherBall,
 };
 
-// 352 Kecleon
 pkmn.kecleon = {
   type: ["normal"],
   bst: {
@@ -8303,7 +8087,6 @@ pkmn.kecleon = {
   hiddenAbility: ability.protean,
 };
 
-// 353 Shuppet → Banette
 pkmn.shuppet = {
   type: ["ghost"],
   bst: {
@@ -8352,7 +8135,6 @@ pkmn.megaBanette = {
   eggMove: move.shadowForce,
 };
 
-// 355 Duskull → Dusclops → Dusknoir
 pkmn.duskull = {
   type: ["ghost"],
   bst: {
@@ -8401,7 +8183,6 @@ pkmn.dusknoir = {
   eggMove: move.spectralThief,
 };
 
-// 357 Tropius
 pkmn.tropius = {
   type: ["grass", "flying"],
   bst: {
@@ -8416,7 +8197,6 @@ pkmn.tropius = {
   eggMove: move.aeroblast,
 };
 
-// 358 Chingling → Chimecho
 pkmn.chingling = {
   type: ["psychic"],
   bst: {
@@ -8462,7 +8242,6 @@ pkmn.megaChimecho = {
   eggMove: move.howl,
 };
 
-// 359 Absol
 pkmn.absol = {
   type: ["dark"],
   bst: {
@@ -8504,9 +8283,6 @@ pkmn.megaAbsolZ = {
   },
 };
 
-// 360 Wynaut
-
-// 361 Snorunt → Glalie / Froslass
 pkmn.snorunt = {
   type: ["ice"],
   bst: {
@@ -8600,7 +8376,6 @@ pkmn.megaFroslass = {
   },
 };
 
-// 363 Spheal → Sealeo → Walrein
 pkmn.spheal = {
   type: ["ice", "water"],
   bst: {
@@ -8649,7 +8424,6 @@ pkmn.walrein = {
   eggMove: move.mountainGale,
 };
 
-// 366 Clamperl → Huntail / Gorebyss
 pkmn.clamperl = {
   type: ["water"],
   bst: {
@@ -8698,7 +8472,6 @@ pkmn.gorebyss = {
   eggMove: ability.weatherBall,
 };
 
-// 369 Relicanth
 pkmn.relicanth = {
   type: ["water", "rock"],
   bst: {
@@ -8713,7 +8486,6 @@ pkmn.relicanth = {
   eggMove: ability.rockWrecker,
 };
 
-// 370 Luvdisc
 pkmn.luvdisc = {
   type: ["water"],
   bst: {
@@ -8727,7 +8499,6 @@ pkmn.luvdisc = {
   hiddenAbility: ability.multiscale,
 };
 
-// 371 Bagon → Shelgon → Salamence
 pkmn.bagon = {
   type: ["dragon"],
   bst: {
@@ -8789,7 +8560,6 @@ pkmn.megaSalamence = {
   hiddenAbility: ability.aerilate,
 };
 
-// 374 Beldum → Metang → Metagross
 pkmn.beldum = {
   type: ["steel", "psychic"],
   bst: {
@@ -8851,7 +8621,6 @@ pkmn.megaMetagross = {
   hiddenAbility: ability.toughClaws,
 };
 
-// 377 Regirock
 pkmn.regirock = {
   type: ["rock"],
   bst: {
@@ -8866,7 +8635,6 @@ pkmn.regirock = {
   signature: move.zapCannon,
 };
 
-// 378 Regice
 pkmn.regice = {
   type: ["ice"],
   bst: {
@@ -8881,7 +8649,6 @@ pkmn.regice = {
   signature: move.zapCannon,
 };
 
-// 379 Registeel
 pkmn.registeel = {
   type: ["steel"],
   bst: {
@@ -8896,7 +8663,6 @@ pkmn.registeel = {
   signature: move.zapCannon,
 };
 
-// 380 Latias
 pkmn.latias = {
   type: ["dragon", "psychic"],
   bst: {
@@ -8925,7 +8691,6 @@ pkmn.megaLatias = {
   signature: move.mistBall,
 };
 
-// 381 Latios
 pkmn.latios = {
   type: ["dragon", "psychic"],
   bst: {
@@ -8954,7 +8719,6 @@ pkmn.megaLatios = {
   signature: move.lusterPurge,
 };
 
-// 382 Kyogre
 pkmn.kyogre = {
   type: ["water"],
   bst: {
@@ -8982,7 +8746,6 @@ pkmn.kyogrePrimal = {
   lore: `The oceans made visible, and the force that first shaped the seas across the world. Waves rise and storms gather at its will.`,
 };
 
-// 383 Groudon
 pkmn.groudon = {
   type: ["ground"],
   bst: {
@@ -9010,7 +8773,6 @@ pkmn.groudonPrimal = {
   lore: `The continents made whole, and the force that first shaped the land across the world. Mountains rise and deserts stretch at its will.`,
 };
 
-// 384 Rayquaza
 pkmn.rayquaza = {
   type: ["dragon", "flying"],
   bst: {
@@ -9037,7 +8799,6 @@ pkmn.megaRayquaza = {
   lore: `Ascending the atmosphere, its reach extending into the upper skies. Protecting not only the world below but the space above, guarding against threats from beyond.`,
 };
 
-// 385 Jirachi
 pkmn.jirachi = {
   type: ["steel", "psychic"],
   bst: {
@@ -9053,7 +8814,6 @@ pkmn.jirachi = {
   lore: `The embodiment of wishing, awakening only once in a thousand years. In those brief moments, it listens to the desires carried in the hearts of others, and its power brings those wishes into reality.`,
 };
 
-// 386 Deoxys
 pkmn.deoxys = {
   type: ["psychic"],
   bst: {
@@ -9102,7 +8862,6 @@ pkmn.deoxysSpeed = {
   },
 };
 
-// 387 Turtwig → Grotle → Torterra
 pkmn.turtwig = {
   type: ["grass"],
   bst: {
@@ -9145,7 +8904,6 @@ pkmn.torterra = {
   },
 };
 
-// 390 Chimchar → Monferno → Infernape
 pkmn.chimchar = {
   type: ["fire"],
   bst: {
@@ -9194,7 +8952,6 @@ pkmn.infernape = {
   eggMove: move.blazeKick,
 };
 
-// 393 Piplup → Prinplup → Empoleon
 pkmn.piplup = {
   type: ["water"],
   bst: {
@@ -9240,7 +8997,6 @@ pkmn.empoleon = {
   hiddenAbility: ability.supremeOverlord,
 };
 
-// 396 Starly → Staravia → Staraptor
 pkmn.starly = {
   type: ["normal", "flying"],
   bst: {
@@ -9301,7 +9057,6 @@ pkmn.megaStaraptor = {
   },
 };
 
-// 399 Bidoof → Bibarel
 pkmn.bidoof = {
   type: ["normal"],
   bst: {
@@ -9333,7 +9088,6 @@ pkmn.bibarel = {
   eggMove: move.aquaStep,
 };
 
-// 401 Kricketot → Kricketune
 pkmn.kricketot = {
   type: ["bug"],
   bst: {
@@ -9365,7 +9119,6 @@ pkmn.kricketune = {
   eggMove: move.megahorn,
 };
 
-// 403 Shinx → Luxio → Luxray
 pkmn.shinx = {
   type: ["electric"],
   bst: {
@@ -9414,7 +9167,6 @@ pkmn.luxray = {
   signature: move.charge,
 };
 
-// 406 Budew → Roselia → Roserade
 pkmn.budew = {
   type: ["grass", "poison"],
   bst: {
@@ -9460,7 +9212,6 @@ pkmn.roserade = {
   hiddenAbility: ability.grassySurge,
 };
 
-// 408 Cranidos → Rampardos
 pkmn.cranidos = {
   type: ["rock"],
   bst: {
@@ -9490,7 +9241,6 @@ pkmn.rampardos = {
   hiddenAbility: ability.sheerForce,
 };
 
-// 410 Shieldon → Bastiodon
 pkmn.shieldon = {
   type: ["rock", "steel"],
   bst: {
@@ -9522,7 +9272,6 @@ pkmn.bastiodon = {
   eggMove: ability.rockWrecker,
 };
 
-// 412 Burmy → Wormadam / Mothim
 pkmn.burmy = {
   rename: `burmy Plant`,
   type: ["bug"],
@@ -9630,7 +9379,6 @@ pkmn.mothim = {
   hiddenAbility: ability.tintedLens,
 };
 
-// 415 Combee → Vespiquen
 pkmn.combee = {
   type: ["bug", "flying"],
   bst: {
@@ -9662,7 +9410,6 @@ pkmn.vespiquen = {
   signature: move.attackOrder,
 };
 
-// 417 Pachirisu
 pkmn.pachirisu = {
   type: ["electric"],
   bst: {
@@ -9677,7 +9424,6 @@ pkmn.pachirisu = {
   eggMove: move.auraWheel,
 };
 
-// 418 Buizel → Floatzel
 pkmn.buizel = {
   type: ["water"],
   bst: {
@@ -9709,7 +9455,6 @@ pkmn.floatzel = {
   signature: move.tripleDive,
 };
 
-// 420 Cherubi → Cherrim
 pkmn.cherubi = {
   type: ["grass"],
   bst: {
@@ -9755,7 +9500,6 @@ pkmn.cherrimSunshine = {
   eggMove: move.frenzyPlant,
 };
 
-// 422 Shellos → Gastrodon
 pkmn.shellos = {
   rename: `shellos West`,
   type: ["water"],
@@ -9817,9 +9561,6 @@ pkmn.gastrodonEast = {
   hiddenAbility: ability.gooey,
 };
 
-// 424 Ambipom
-
-// 425 Drifloon → Drifblim
 pkmn.drifloon = {
   type: ["ghost", "flying"],
   bst: {
@@ -9849,7 +9590,6 @@ pkmn.drifblim = {
   hiddenAbility: ability.windRider,
 };
 
-// 427 Buneary → Lopunny
 pkmn.buneary = {
   type: ["normal"],
   bst: {
@@ -9897,10 +9637,6 @@ pkmn.megaLopunny = {
   eggMove: move.hiJumpKick,
 };
 
-// 429 Mismagius
-// 430 Honchkrow
-
-// 431 Glameow → Purugly
 pkmn.glameow = {
   type: ["normal"],
   bst: {
@@ -9930,9 +9666,6 @@ pkmn.purugly = {
   hiddenAbility: ability.thickFat,
 };
 
-// 433 Chingling
-
-// 434 Stunky → Skuntank
 pkmn.stunky = {
   type: ["poison", "dark"],
   bst: {
@@ -9960,7 +9693,6 @@ pkmn.skuntank = {
   },
 };
 
-// 436 Bronzor → Bronzong
 pkmn.bronzor = {
   type: ["steel", "psychic"],
   bst: {
@@ -9990,11 +9722,6 @@ pkmn.bronzong = {
   hiddenAbility: ability.levitate,
 };
 
-// 438 Bonsly
-// 439 Mime Jr.
-// 440 Happiny
-
-// 441 Chatot
 pkmn.chatot = {
   type: ["normal", "flying"],
   bst: {
@@ -10009,7 +9736,6 @@ pkmn.chatot = {
   hiddenAbility: ability.cacophony,
 };
 
-// 442 Spiritomb
 pkmn.spiritomb = {
   type: ["ghost", "dark"],
   bst: {
@@ -10023,7 +9749,6 @@ pkmn.spiritomb = {
   hiddenAbility: ability.powerOfAlchemy,
 };
 
-// 443 Gible → Gabite → Garchomp
 pkmn.gible = {
   type: ["dragon", "ground"],
   bst: {
@@ -10105,9 +9830,6 @@ pkmn.megaGarchompZ = {
 
 */
 
-// 446 Munchlax
-
-// 447 Riolu → Lucario
 pkmn.riolu = {
   type: ["fighting"],
   bst: {
@@ -10165,7 +9887,6 @@ pkmn.megaLucarioZ = {
   },
 };
 
-// 449 Hippopotas → Hippowdon
 pkmn.hippopotas = {
   type: ["ground"],
   bst: {
@@ -10195,7 +9916,6 @@ pkmn.hippowdon = {
   hiddenAbility: ability.sandStream,
 };
 
-// 451 Skorupi → Drapion
 pkmn.skorupi = {
   type: ["poison", "bug"],
   bst: {
@@ -10227,7 +9947,6 @@ pkmn.drapion = {
   hiddenAbility: ability.merciless,
 };
 
-// 453 Croagunk → Toxicroak
 pkmn.croagunk = {
   type: ["poison", "fighting"],
   bst: {
@@ -10257,7 +9976,6 @@ pkmn.toxicroak = {
   signature: move.venoshock,
 };
 
-// 455 Carnivine
 pkmn.carnivine = {
   type: ["grass"],
   bst: {
@@ -10272,7 +9990,6 @@ pkmn.carnivine = {
   eggMove: move.frenzyPlant,
 };
 
-// 456 Finneon → Lumineon
 pkmn.finneon = {
   type: ["water"],
   bst: {
@@ -10302,9 +10019,6 @@ pkmn.lumineon = {
   hiddenAbility: ability.swiftSwim,
 };
 
-// 458 Mantyke
-
-// 459 Snover → Abomasnow
 pkmn.snover = {
   type: ["grass", "ice"],
   bst: {
@@ -10353,26 +10067,6 @@ pkmn.megaAbomasnow = {
   eggMove: move.freezeDry,
 };
 
-// 461 Weavile
-// 462 Magnezone
-// 463 Lickylicky
-// 464 Rhyperior
-// 465 Tangrowth
-// 466 Electivire
-// 467 Magmortar
-// 468 Togekiss
-// 469 Yanmega
-// 470 Leafeon
-// 471 Glaceon
-// 472 Gliscor
-// 473 Mamoswine
-// 474 Porygon-Z
-// 475 Gallade
-// 476 Probopass
-// 477 Dusknoir
-// 478 Froslass
-
-// 479 Rotom
 pkmn.rotom = {
   type: ["electric", "ghost"],
   bst: {
@@ -10453,7 +10147,6 @@ pkmn.rotomMow = {
   hiddenAbility: ability.verdify,
 };
 
-// 480 Uxie
 pkmn.uxie = {
   type: ["psychic"],
   bst: {
@@ -10469,7 +10162,6 @@ pkmn.uxie = {
   lore: `Emerged to give shape to knowledge. When the world was still new, it shared understanding with humanity, allowing thought and memory to take root. Its presence quiets turmoil to the gods of time and space.`,
 };
 
-// 481 Mesprit
 pkmn.mesprit = {
   type: ["psychic"],
   bst: {
@@ -10485,7 +10177,6 @@ pkmn.mesprit = {
   lore: `Emerged to give shape to emotion. When the world was still new, it shared feeling with humanity, allowing joy, sorrow, and empathy to take root. Its presence soothes unrest to the gods of time and space.`,
 };
 
-// 482 Azelf
 pkmn.azelf = {
   type: ["psychic"],
   bst: {
@@ -10501,7 +10192,6 @@ pkmn.azelf = {
   lore: `Emerged to give shape to will. When the world was still new, it granted resolve to humanity, allowing action, choice, and determination to take form. Its presence steels the spirit of the gods of time and space.`,
 };
 
-// 483 Dialga
 pkmn.dialga = {
   type: ["steel", "dragon"],
   bst: {
@@ -10529,7 +10219,6 @@ pkmn.dialgaOrigin = {
   lore: `Shaped by the Original One, when the universe had yet to know its first moment, It was brought forth to give law to duration. By its heartbeat, time began to flow; by its will, past and future were torn apart and given order. Without It, all life trapped by eternal stillness.`,
 };
 
-// 484 Palkia
 pkmn.palkia = {
   type: ["water", "dragon"],
   bst: {
@@ -10558,7 +10247,6 @@ pkmn.palkiaOrigin = {
   lore: `Shaped by the Original One, when the universe was yet unmeasured, It was brought forth to give form to expanse. By its existence, space became vast; by its will, distance gained meaning. Without It, the world would have no breadth, no separation between sky and land, nor any path for life to walk.`,
 };
 
-// 485 Heatran
 pkmn.heatran = {
   type: ["fire", "steel"],
   bst: {
@@ -10586,7 +10274,6 @@ pkmn.megaHeatran = {
   },
 };
 
-// 486 Regigigas
 pkmn.regigigas = {
   type: ["normal"],
   bst: {
@@ -10602,7 +10289,6 @@ pkmn.regigigas = {
   signature: move.crushGrip,
 };
 
-// 487 Giratina
 pkmn.giratina = {
   type: ["ghost", "dragon"],
   bst: {
@@ -10630,7 +10316,6 @@ pkmn.giratinaOrigin = {
   lore: `Shaped by the Original One, when the laws of creation first took form, It was born in defiance of them. Given dominion over antithesis of matter, It was cast away for its violence, bound to a world where logic collapses and direction has no meaning.`,
 };
 
-// 488 Cresselia
 pkmn.cresselia = {
   type: ["psychic"],
   bst: {
@@ -10646,7 +10331,6 @@ pkmn.cresselia = {
   lore: `The embodiment of moon light. From the earliest ages, it has watched over sleep and dreams, bringing peaceful rest where darkness gathers. Its feathers dispel the nightmares born by Darkrai, as they balance the quiet rhythm of night that was set into the world.`,
 };
 
-// 489 Phione
 pkmn.phione = {
   type: ["water"],
   bst: {
@@ -10660,7 +10344,6 @@ pkmn.phione = {
   eggMove: move.tailGlow,
 };
 
-// 490 Manaphy
 pkmn.manaphy = {
   type: ["water"],
   bst: {
@@ -10675,7 +10358,6 @@ pkmn.manaphy = {
   eggMove: move.tailGlow,
 };
 
-// 491 Darkrai
 pkmn.darkrai = {
   type: ["dark"],
   bst: {
@@ -10702,7 +10384,6 @@ pkmn.megaDarkrai = {
   },
 };
 
-// 492 Shaymin
 pkmn.shaymin = {
   type: ["grass"],
   bst: {
@@ -10731,7 +10412,6 @@ pkmn.shayminSky = {
   lore: `Embodying gratitude and the renewal of life, It moves across barren lands, leaving fields of flowers in its wake and restoring the vitality of nature, bringing growth and bloom to places long abandoned.`,
 };
 
-// 493 Arceus
 pkmn.arceus = {
   type: ["normal"],
   bst: {
@@ -10989,7 +10669,6 @@ pkmn.arceusFairy = {
 
 */
 
-// 494 Victini
 pkmn.victini = {
   type: ["psychic", "fire"],
   bst: {
@@ -11003,7 +10682,6 @@ pkmn.victini = {
   signature: move.vCreate,
 };
 
-// 495 Snivy → Servine → Serperior
 pkmn.snivy = {
   type: ["grass"],
   bst: {
@@ -11049,7 +10727,6 @@ pkmn.serperior = {
   hiddenAbility: ability.contrary,
 };
 
-// 498 Tepig → Pignite → Emboar
 pkmn.tepig = {
   type: ["fire"],
   bst: {
@@ -11112,7 +10789,6 @@ pkmn.megaEmboar = {
   signature: move.heatCrash,
 };
 
-// 501 Oshawott → Dewott → Samurott
 pkmn.oshawott = {
   type: ["water"],
   bst: {
@@ -11175,7 +10851,6 @@ pkmn.hisuianSamurott = {
   signature: move.razorShell,
 };
 
-// 504 Patrat → Watchog
 pkmn.patrat = {
   type: ["normal"],
   bst: {
@@ -11203,7 +10878,6 @@ pkmn.watchog = {
   },
 };
 
-// 506 Lillipup → Herdier → Stoutland
 pkmn.lillipup = {
   type: ["normal"],
   bst: {
@@ -11249,7 +10923,6 @@ pkmn.stoutland = {
   hiddenAbility: ability.intimidate,
 };
 
-// 509 Purrloin → Liepard
 pkmn.purrloin = {
   type: ["dark"],
   bst: {
@@ -11279,7 +10952,6 @@ pkmn.liepard = {
   hiddenAbility: ability.prankster,
 };
 
-// 511 Pansage → Simisage
 pkmn.pansage = {
   type: ["grass"],
   bst: {
@@ -11292,7 +10964,7 @@ pkmn.pansage = {
   },
   evolve: function () {
     return {
-      1: { pkmn: pkmn.simisage, item: item.leafStone /* o candy si lo usas */ },
+      1: { pkmn: pkmn.simisage, item: item.leafStone },
     };
   },
 };
@@ -11309,7 +10981,6 @@ pkmn.simisage = {
   },
 };
 
-// 513 Pansear → Simisear
 pkmn.pansear = {
   type: ["fire"],
   bst: {
@@ -11341,7 +11012,6 @@ pkmn.simisear = {
   eggMove: move.burnUp,
 };
 
-// 515 Panpour → Simipour
 pkmn.panpour = {
   type: ["water"],
   bst: {
@@ -11373,7 +11043,6 @@ pkmn.simipour = {
   eggMove: move.snipeShot,
 };
 
-// 517 Munna → Musharna
 pkmn.munna = {
   type: ["psychic"],
   bst: {
@@ -11386,7 +11055,7 @@ pkmn.munna = {
   },
   evolve: function () {
     return {
-      1: { pkmn: pkmn.musharna, item: item.dawnStone /* o equivalente */ },
+      1: { pkmn: pkmn.musharna, item: item.dawnStone },
     };
   },
   hiddenAbility: ability.aromaVeil,
@@ -11407,7 +11076,6 @@ pkmn.musharna = {
   eggMove: move.storedPower,
 };
 
-// 519 Pidove → Tranquill → Unfezant
 pkmn.pidove = {
   type: ["normal", "flying"],
   bst: {
@@ -11453,7 +11121,6 @@ pkmn.unfezant = {
   hiddenAbility: ability.rivalry,
 };
 
-// 522 Blitzle → Zebstrika
 pkmn.blitzle = {
   type: ["electric"],
   bst: {
@@ -11483,7 +11150,6 @@ pkmn.zebstrika = {
   hiddenAbility: ability.hyperconductor,
 };
 
-// 524 Roggenrola → Boldore → Gigalith
 pkmn.roggenrola = {
   type: ["rock"],
   bst: {
@@ -11515,7 +11181,7 @@ pkmn.boldore = {
     return {
       1: {
         pkmn: pkmn.gigalith,
-        item: item.linkStone /*o un objeto de “union” si lo usas*/,
+        item: item.linkStone,
       },
     };
   },
@@ -11537,7 +11203,6 @@ pkmn.gigalith = {
   eggMove: move.rockWrecker,
 };
 
-// 527 Woobat → Swoobat
 pkmn.woobat = {
   type: ["psychic", "flying"],
   bst: {
@@ -11567,7 +11232,6 @@ pkmn.swoobat = {
   hiddenAbility: ability.simple,
 };
 
-// 529 Drilbur → Excadrill
 pkmn.drilbur = {
   type: ["ground"],
   bst: {
@@ -11609,7 +11273,6 @@ pkmn.megaExcadrill = {
   },
 };
 
-// 531 Audino
 pkmn.audino = {
   type: ["normal"],
   bst: {
@@ -11641,7 +11304,6 @@ pkmn.megaAudino = {
   hiddenAbility: ability.sweetVeil,
 };
 
-// 532 Timburr → Gurdurr → Conkeldurr
 pkmn.timburr = {
   type: ["fighting"],
   bst: {
@@ -11672,7 +11334,7 @@ pkmn.gurdurr = {
     return {
       1: {
         pkmn: pkmn.conkeldurr,
-        item: item.linkStone /*o “union” si usas algo así*/,
+        item: item.linkStone,
       },
     };
   },
@@ -11692,7 +11354,6 @@ pkmn.conkeldurr = {
   hiddenAbility: ability.ironFist,
 };
 
-// 535 Tympole → Palpitoad → Seismitoad
 pkmn.tympole = {
   type: ["water"],
   bst: {
@@ -11738,7 +11399,6 @@ pkmn.seismitoad = {
   hiddenAbility: ability.terralate,
 };
 
-// 538 Throh
 pkmn.throh = {
   type: ["fighting"],
   bst: {
@@ -11752,7 +11412,6 @@ pkmn.throh = {
   hiddenAbility: ability.guts,
 };
 
-// 539 Sawk
 pkmn.sawk = {
   type: ["fighting"],
   bst: {
@@ -11767,7 +11426,6 @@ pkmn.sawk = {
   eggMove: move.hiJumpKick,
 };
 
-// 540 Sewaddle → Swadloon → Leavanny
 pkmn.sewaddle = {
   type: ["bug", "grass"],
   bst: {
@@ -11815,7 +11473,6 @@ pkmn.leavanny = {
   eggMove: move.trailblaze,
 };
 
-// 543 Venipede → Whirlipede → Scolipede
 pkmn.venipede = {
   type: ["bug", "poison"],
   bst: {
@@ -11861,7 +11518,6 @@ pkmn.scolipede = {
   hiddenAbility: ability.speedBoost,
 };
 
-// 546 Cottonee → Whimsicott
 pkmn.cottonee = {
   type: ["grass", "fairy"],
   bst: {
@@ -11874,7 +11530,7 @@ pkmn.cottonee = {
   },
   evolve: function () {
     return {
-      1: { pkmn: pkmn.whimsicott, item: item.sunStone /*o equivalente*/ },
+      1: { pkmn: pkmn.whimsicott, item: item.sunStone },
     };
   },
   signature: move.cottonGuard,
@@ -11893,7 +11549,6 @@ pkmn.whimsicott = {
   signature: move.cottonGuard,
 };
 
-// 548 Petilil → Lilligant
 pkmn.petilil = {
   type: ["grass"],
   bst: {
@@ -11936,7 +11591,6 @@ pkmn.hisuianLilligant = {
   hiddenAbility: ability.costar,
 };
 
-// 550 Basculin → Basculegion
 pkmn.basculin = {
   rename: `basculin Red`,
   type: ["water"],
@@ -12007,7 +11661,6 @@ pkmn.basculegionF = {
   },
 };
 
-// 551 Sandile → Krokorok → Krookodile
 pkmn.sandile = {
   type: ["ground", "dark"],
   bst: {
@@ -12053,7 +11706,6 @@ pkmn.krookodile = {
   hiddenAbility: ability.moxie,
 };
 
-// 554 Darumaka → Darmanitan
 pkmn.darumaka = {
   type: ["fire"],
   bst: {
@@ -12112,7 +11764,6 @@ pkmn.galarianDarmanitan = {
   },
 };
 
-// 556 Maractus
 pkmn.maractus = {
   type: ["grass"],
   bst: {
@@ -12127,7 +11778,6 @@ pkmn.maractus = {
   eggMove: move.acupressure,
 };
 
-// 557 Dwebble → Crustle
 pkmn.dwebble = {
   type: ["bug", "rock"],
   bst: {
@@ -12157,7 +11807,6 @@ pkmn.crustle = {
   hiddenAbility: ability.filter,
 };
 
-// 559 Scraggy → Scrafty
 pkmn.scraggy = {
   type: ["dark", "fighting"],
   bst: {
@@ -12187,7 +11836,6 @@ pkmn.scrafty = {
   hiddenAbility: ability.moxie,
 };
 
-// 561 Sigilyph
 pkmn.sigilyph = {
   type: ["psychic", "flying"],
   bst: {
@@ -12202,7 +11850,6 @@ pkmn.sigilyph = {
   signature: move.storedPower,
 };
 
-// 562 Yamask → Cofagrigus / Galarian Yamask → Runerigus
 pkmn.yamask = {
   type: ["ghost"],
   bst: {
@@ -12261,7 +11908,6 @@ pkmn.runerigus = {
   hiddenAbility: ability.powerOfAlchemy,
 };
 
-// 564 Tirtouga → Carracosta
 pkmn.tirtouga = {
   type: ["water", "rock"],
   bst: {
@@ -12293,7 +11939,6 @@ pkmn.carracosta = {
   eggMove: move.razorShell,
 };
 
-// 566 Archen → Archeops
 pkmn.archen = {
   type: ["rock", "flying"],
   bst: {
@@ -12323,7 +11968,6 @@ pkmn.archeops = {
   hiddenAbility: ability.stoned,
 };
 
-// 568 Trubbish → Garbodor
 pkmn.trubbish = {
   type: ["poison"],
   bst: {
@@ -12366,7 +12010,6 @@ pkmn.garbodorGmax = {
   hiddenAbility: ability.toxicBoost,
 };
 
-// 570 Zorua → Zoroark
 pkmn.zorua = {
   type: ["dark"],
   bst: {
@@ -12427,7 +12070,6 @@ pkmn.hisuianZoroark = {
   hiddenAbility: ability.merciless,
 };
 
-// 572 Minccino → Cinccino
 pkmn.minccino = {
   type: ["normal"],
   bst: {
@@ -12440,7 +12082,7 @@ pkmn.minccino = {
   },
   evolve: function () {
     return {
-      1: { pkmn: pkmn.cinccino, item: item.shinyStone /*o equivalente*/ },
+      1: { pkmn: pkmn.cinccino, item: item.shinyStone },
     };
   },
   hiddenAbility: ability.skillLink,
@@ -12459,7 +12101,6 @@ pkmn.cinccino = {
   hiddenAbility: ability.skillLink,
 };
 
-// 574 Gothita → Gothorita → Gothitelle
 pkmn.gothita = {
   type: ["psychic"],
   bst: {
@@ -12505,7 +12146,6 @@ pkmn.gothitelle = {
   hiddenAbility: ability.justified,
 };
 
-// 577 Solosis → Duosion → Reuniclus
 pkmn.solosis = {
   type: ["psychic"],
   bst: {
@@ -12551,7 +12191,6 @@ pkmn.reuniclus = {
   hiddenAbility: ability.magicGuard,
 };
 
-// 580 Ducklett → Swanna
 pkmn.ducklett = {
   type: ["water", "flying"],
   bst: {
@@ -12581,7 +12220,6 @@ pkmn.swanna = {
   hiddenAbility: ability.drizzle,
 };
 
-// 582 Vanillite → Vanillish → Vanilluxe
 pkmn.vanillite = {
   type: ["ice"],
   bst: {
@@ -12627,7 +12265,6 @@ pkmn.vanilluxe = {
   hiddenAbility: ability.snowWarning,
 };
 
-// 585 Deerling → Sawsbuck
 pkmn.deerling = {
   type: ["normal", "grass"],
   bst: {
@@ -12752,7 +12389,6 @@ pkmn.sawsbuckWinter = {
   eggMove: move.camouflage,
 };
 
-// 587 Emolga
 pkmn.emolga = {
   type: ["electric", "flying"],
   bst: {
@@ -12780,7 +12416,6 @@ pkmn.emolgaEvent = {
   },
 };
 
-// 588 Karrablast → Escavalier
 pkmn.karrablast = {
   type: ["bug"],
   bst: {
@@ -12810,7 +12445,6 @@ pkmn.escavalier = {
   eggMove: move.megahorn,
 };
 
-// 590 Foongus → Amoonguss
 pkmn.foongus = {
   type: ["grass", "poison"],
   bst: {
@@ -12840,7 +12474,6 @@ pkmn.amoonguss = {
   hiddenAbility: ability.imposter,
 };
 
-// 592 Frillish → Jellicent
 pkmn.frillish = {
   type: ["water", "ghost"],
   bst: {
@@ -12868,7 +12501,6 @@ pkmn.jellicent = {
   },
 };
 
-// 594 Alomomola
 pkmn.alomomola = {
   type: ["water"],
   bst: {
@@ -12881,7 +12513,6 @@ pkmn.alomomola = {
   },
 };
 
-// 595 Joltik → Galvantula
 pkmn.joltik = {
   type: ["bug", "electric"],
   bst: {
@@ -12913,7 +12544,6 @@ pkmn.galvantula = {
   eggMove: move.electroBall,
 };
 
-// 597 Ferroseed → Ferrothorn
 pkmn.ferroseed = {
   type: ["grass", "steel"],
   bst: {
@@ -12943,7 +12573,6 @@ pkmn.ferrothorn = {
   hiddenAbility: ability.ferrilate,
 };
 
-// 599 Klink → Klang → Klinklang
 pkmn.klink = {
   type: ["steel"],
   bst: {
@@ -12992,7 +12621,6 @@ pkmn.klinklang = {
   signature: move.shiftGear,
 };
 
-// 602 Tynamo → Eelektrik → Eelektross
 pkmn.tynamo = {
   type: ["electric"],
   bst: {
@@ -13055,7 +12683,6 @@ pkmn.megaEelektross = {
   signature: move.zingZap,
 };
 
-// 605 Elgyem → Beheeyem
 pkmn.elgyem = {
   type: ["psychic"],
   bst: {
@@ -13083,7 +12710,6 @@ pkmn.beheeyem = {
   },
 };
 
-// 607 Litwick → Lampent → Chandelure
 pkmn.litwick = {
   type: ["ghost", "fire"],
   bst: {
@@ -13141,7 +12767,6 @@ pkmn.megaChandelure = {
   },
 };
 
-// 610 Axew → Fraxure → Haxorus
 pkmn.axew = {
   type: ["dragon"],
   bst: {
@@ -13187,7 +12812,6 @@ pkmn.haxorus = {
   hiddenAbility: ability.rivalry,
 };
 
-// 613 Cubchoo → Beartic
 pkmn.cubchoo = {
   type: ["ice"],
   bst: {
@@ -13217,7 +12841,6 @@ pkmn.beartic = {
   hiddenAbility: ability.slushRush,
 };
 
-// 615 Cryogonal
 pkmn.cryogonal = {
   type: ["ice"],
   bst: {
@@ -13232,7 +12855,6 @@ pkmn.cryogonal = {
   signature: move.freezeDry,
 };
 
-// 616 Shelmet → Accelgor
 pkmn.shelmet = {
   type: ["bug"],
   bst: {
@@ -13264,7 +12886,6 @@ pkmn.accelgor = {
   eggMove: move.meFirst,
 };
 
-// 618 Stunfisk
 pkmn.stunfisk = {
   type: ["ground", "electric"],
   bst: {
@@ -13292,7 +12913,6 @@ pkmn.galarianStunfisk = {
   hiddenAbility: ability.terralate,
 };
 
-// 619 Mienfoo → Mienshao
 pkmn.mienfoo = {
   type: ["fighting"],
   bst: {
@@ -13322,7 +12942,6 @@ pkmn.mienshao = {
   hiddenAbility: ability.ambidextrous,
 };
 
-// 621 Druddigon
 pkmn.druddigon = {
   type: ["dragon"],
   bst: {
@@ -13336,7 +12955,6 @@ pkmn.druddigon = {
   hiddenAbility: ability.merciless,
 };
 
-// 622 Golett → Golurk
 pkmn.golett = {
   type: ["ground", "ghost"],
   bst: {
@@ -13380,7 +12998,6 @@ pkmn.megaGolurk = {
 }
 */
 
-// 624 Pawniard → Bisharp → Kingambit
 pkmn.pawniard = {
   type: ["dark", "steel"],
   bst: {
@@ -13429,7 +13046,6 @@ pkmn.kingambit = {
   eggMove: move.falseSurrender,
 };
 
-// 626 Bouffalant
 pkmn.bouffalant = {
   type: ["normal"],
   bst: {
@@ -13444,7 +13060,6 @@ pkmn.bouffalant = {
   hiddenAbility: ability.metalhead,
 };
 
-// 627 Rufflet → Braviary
 pkmn.rufflet = {
   type: ["normal", "flying"],
   bst: {
@@ -13488,7 +13103,6 @@ pkmn.hisuianBraviary = {
   },
 };
 
-// 629 Vullaby → Mandibuzz
 pkmn.vullaby = {
   type: ["dark", "flying"],
   bst: {
@@ -13516,7 +13130,6 @@ pkmn.mandibuzz = {
   },
 };
 
-// 631 Heatmor
 pkmn.heatmor = {
   type: ["fire"],
   bst: {
@@ -13531,7 +13144,6 @@ pkmn.heatmor = {
   eggMove: move.burnUp,
 };
 
-// 632 Durant
 pkmn.durant = {
   type: ["bug", "steel"],
   bst: {
@@ -13545,7 +13157,6 @@ pkmn.durant = {
   hiddenAbility: ability.fullMetalBody,
 };
 
-// 633 Deino → Zweilous → Hydreigon
 pkmn.deino = {
   type: ["dark", "dragon"],
   bst: {
@@ -13594,7 +13205,6 @@ pkmn.hydreigon = {
   eggMove: move.dragonEnergy,
 };
 
-// 636 Larvesta → Volcarona
 pkmn.larvesta = {
   type: ["bug", "fire"],
   bst: {
@@ -13624,7 +13234,6 @@ pkmn.volcarona = {
   signature: move.fieryDance,
 };
 
-// 638 Cobalion
 pkmn.cobalion = {
   type: ["steel", "fighting"],
   bst: {
@@ -13638,7 +13247,6 @@ pkmn.cobalion = {
   hiddenAbility: ability.fullMetalBody,
 };
 
-// 639 Terrakion
 pkmn.terrakion = {
   type: ["rock", "fighting"],
   bst: {
@@ -13651,7 +13259,6 @@ pkmn.terrakion = {
   },
 };
 
-// 640 Virizion
 pkmn.virizion = {
   type: ["grass", "fighting"],
   bst: {
@@ -13665,7 +13272,6 @@ pkmn.virizion = {
   hiddenAbility: ability.stamina,
 };
 
-// 641 Tornadus
 pkmn.tornadus = {
   type: ["flying"],
   bst: {
@@ -13691,7 +13297,6 @@ pkmn.tornadusTherian = {
   },
 };
 
-// 642 Thundurus
 pkmn.thundurus = {
   type: ["electric", "flying"],
   bst: {
@@ -13718,7 +13323,6 @@ pkmn.thundurusTherian = {
   hiddenAbility: ability.prankster,
 };
 
-// 645 Landorus
 pkmn.landorus = {
   type: ["ground", "flying"],
   bst: {
@@ -13745,7 +13349,6 @@ pkmn.landorusTherian = {
   },
 };
 
-// 905 Enamorus
 pkmn.enamorus = {
   type: ["fairy", "flying"],
   bst: {
@@ -13771,7 +13374,6 @@ pkmn.enamorusTherian = {
   },
 };
 
-// 643 Reshiram
 pkmn.reshiram = {
   type: ["dragon", "fire"],
   bst: {
@@ -13785,7 +13387,6 @@ pkmn.reshiram = {
   signature: move.blueFlare,
 };
 
-// 644 Zekrom
 pkmn.zekrom = {
   type: ["dragon", "electric"],
   bst: {
@@ -13799,7 +13400,6 @@ pkmn.zekrom = {
   signature: move.boltStrike,
 };
 
-// 646 Kyurem
 pkmn.kyurem = {
   type: ["dragon", "ice"],
   bst: {
@@ -13838,7 +13438,6 @@ pkmn.kyuremWhite = {
   },
 };
 
-// 647 Keldeo
 pkmn.keldeo = {
   type: ["water", "fighting"],
   bst: {
@@ -13863,7 +13462,6 @@ pkmn.keldeoResolute = {
   },
 };
 
-// 648 Meloetta
 pkmn.meloetta = {
   type: ["normal", "psychic"],
   bst: {
@@ -13892,7 +13490,6 @@ pkmn.meloettaPirouette = {
   signature: move.relicSong,
 };
 
-// 649 Genesect
 pkmn.genesect = {
   type: ["bug", "steel"],
   bst: {
@@ -13963,7 +13560,6 @@ pkmn.genesectChill = {
 
 */
 
-// 650 Chespin → Quilladin → Chesnaught
 pkmn.chespin = {
   type: ["grass"],
   bst: {
@@ -14018,7 +13614,6 @@ pkmn.megaChesnaught = {
   },
 };
 
-// 653 Fennekin → Braixen → Delphox
 pkmn.fennekin = {
   type: ["fire"],
   bst: {
@@ -14081,7 +13676,6 @@ pkmn.megaDelphox = {
   signature: move.mysticalFire,
 };
 
-// 656 Froakie → Frogadier → Greninja
 pkmn.froakie = {
   type: ["water"],
   bst: {
@@ -14157,7 +13751,6 @@ pkmn.megaGreninja = {
   },
 };
 
-// 659 Bunnelby → Diggersby
 pkmn.bunnelby = {
   type: ["normal"],
   bst: {
@@ -14189,7 +13782,6 @@ pkmn.diggersby = {
   eggMove: move.highHorsepower,
 };
 
-// 661 Fletchling → Fletchinder → Talonflame
 pkmn.fletchling = {
   type: ["normal", "flying"],
   bst: {
@@ -14238,7 +13830,6 @@ pkmn.talonflame = {
   eggMove: move.braveBird,
 };
 
-// 664 Scatterbug → Spewpa → Vivillon
 pkmn.scatterbug = {
   type: ["bug"],
   bst: {
@@ -14531,7 +14122,6 @@ pkmn.vivillonTundra = {
   hiddenAbility: ability.tintedLens,
 };
 
-// 667 Litleo → Pyroar
 pkmn.litleo = {
   type: ["fire", "normal"],
   bst: {
@@ -14580,7 +14170,6 @@ pkmn.megaPyroar = {
   signature: move.nobleRoar,
 };
 
-// 669 Flabébé → Floette → Florges
 pkmn.flabebe = {
   type: ["fairy"],
   bst: {
@@ -14832,7 +14421,6 @@ pkmn.florgesYellow = {
   hiddenAbility: ability.naturalCure,
 };
 
-// 672 Skiddo → Gogoat
 pkmn.skiddo = {
   type: ["grass"],
   bst: {
@@ -14864,7 +14452,6 @@ pkmn.gogoat = {
   eggMove: move.trailblaze,
 };
 
-// 674 Pancham → Pangoro
 pkmn.pancham = {
   type: ["fighting"],
   bst: {
@@ -14894,7 +14481,6 @@ pkmn.pangoro = {
   hiddenAbility: ability.ironFist,
 };
 
-// 676 Furfrou
 pkmn.furfrou = {
   type: ["normal"],
   bst: {
@@ -15015,7 +14601,6 @@ pkmn.furfrouPharaoh = {
   },
 };
 
-// 677 Espurr → Meowstic
 pkmn.espurr = {
   type: ["psychic"],
   bst: {
@@ -15061,7 +14646,6 @@ pkmn.megaMeowstic = {
 
 */
 
-// 679 Honedge → Doublade → Aegislash
 pkmn.honedge = {
   type: ["steel", "ghost"],
   bst: {
@@ -15110,7 +14694,6 @@ pkmn.aegislash = {
   signature: move.kingsShield,
 };
 
-// 682 Spritzee → Aromatisse
 pkmn.spritzee = {
   type: ["fairy"],
   bst: {
@@ -15142,7 +14725,6 @@ pkmn.aromatisse = {
   signature: move.aromaticMist,
 };
 
-// 684 Swirlix → Slurpuff
 pkmn.swirlix = {
   type: ["fairy"],
   bst: {
@@ -15174,7 +14756,6 @@ pkmn.slurpuff = {
   eggMove: move.bellyDrum,
 };
 
-// 686 Inkay → Malamar
 pkmn.inkay = {
   type: ["dark", "psychic"],
   bst: {
@@ -15220,7 +14801,6 @@ pkmn.megaMalamar = {
   eggMove: move.luminaCrash,
 };
 
-// 688 Binacle → Barbaracle
 pkmn.binacle = {
   type: ["rock", "water"],
   bst: {
@@ -15266,7 +14846,6 @@ pkmn.megaBarbaracle = {
   hiddenAbility: ability.ambidextrous,
 };
 
-// 690 Skrelp → Dragalge
 pkmn.skrelp = {
   type: ["poison", "water"],
   bst: {
@@ -15312,7 +14891,6 @@ pkmn.megaDragalge = {
   eggMove: move.snipeShot,
 };
 
-// 692 Clauncher → Clawitzer
 pkmn.clauncher = {
   type: ["water"],
   bst: {
@@ -15344,7 +14922,6 @@ pkmn.clawitzer = {
   eggMove: move.hydroCannon,
 };
 
-// 694 Helioptile → Heliolisk
 pkmn.helioptile = {
   type: ["electric", "normal"],
   bst: {
@@ -15374,7 +14951,6 @@ pkmn.heliolisk = {
   signature: move.electrify,
 };
 
-// 696 Tyrunt → Tyrantrum
 pkmn.tyrunt = {
   type: ["rock", "dragon"],
   bst: {
@@ -15404,7 +14980,6 @@ pkmn.tyrantrum = {
   hiddenAbility: ability.strongJaw,
 };
 
-// 698 Amaura → Aurorus
 pkmn.amaura = {
   type: ["rock", "ice"],
   bst: {
@@ -15436,9 +15011,6 @@ pkmn.aurorus = {
   eggMove: ability.weatherBall,
 };
 
-// 700 Sylveon
-
-// 701 Hawlucha
 pkmn.hawlucha = {
   type: ["fighting", "flying"],
   bst: {
@@ -15470,7 +15042,6 @@ pkmn.megaHawlucha = {
   signature: move.flyingPress,
 };
 
-// 702 Dedenne
 pkmn.dedenne = {
   type: ["electric", "fairy"],
   bst: {
@@ -15484,7 +15055,6 @@ pkmn.dedenne = {
   hiddenAbility: ability.faeRush,
 };
 
-// 703 Carbink
 pkmn.carbink = {
   type: ["rock", "fairy"],
   bst: {
@@ -15498,7 +15068,6 @@ pkmn.carbink = {
   hiddenAbility: ability.purifyingSalt,
 };
 
-// 704 Goomy → Sliggoo → Goodra
 pkmn.goomy = {
   type: ["dragon"],
   bst: {
@@ -15573,7 +15142,6 @@ pkmn.hisuianGoodra = {
   hiddenAbility: ability.gooey,
 };
 
-// 707 Klefki
 pkmn.klefki = {
   type: ["steel", "fairy"],
   bst: {
@@ -15587,7 +15155,6 @@ pkmn.klefki = {
   signature: move.fairyLock,
 };
 
-// 708 Phantump → Trevenant
 pkmn.phantump = {
   type: ["ghost", "grass"],
   bst: {
@@ -15617,7 +15184,6 @@ pkmn.trevenant = {
   signature: move.forestCurse,
 };
 
-// 710 Pumpkaboo → Gourgeist
 pkmn.pumpkaboo = {
   type: ["ghost", "grass"],
   bst: {
@@ -15647,7 +15213,6 @@ pkmn.gourgeist = {
   signature: move.trickOrTreat,
 };
 
-// 712 Bergmite → Avalugg
 pkmn.bergmite = {
   type: ["ice"],
   bst: {
@@ -15692,7 +15257,6 @@ pkmn.hisuianAvalugg = {
   signature: move.mountainGale,
 };
 
-// 714 Noibat → Noivern
 pkmn.noibat = {
   type: ["flying", "dragon"],
   bst: {
@@ -15724,7 +15288,6 @@ pkmn.noivern = {
   eggMove: move.roarOfTime,
 };
 
-// 716 Xerneas
 pkmn.xerneas = {
   type: ["fairy"],
   bst: {
@@ -15737,7 +15300,6 @@ pkmn.xerneas = {
   },
 };
 
-// 717 Yveltal
 pkmn.yveltal = {
   type: ["dark", "flying"],
   bst: {
@@ -15750,7 +15312,6 @@ pkmn.yveltal = {
   },
 };
 
-// 718 Zygarde
 pkmn.zygarde10 = {
   rename: `zygarde 10%`,
   type: ["dragon", "ground"],
@@ -15803,7 +15364,6 @@ pkmn.megaZygarde = {
   },
 };
 
-// 719 Diancie
 pkmn.diancie = {
   type: ["rock", "fairy"],
   bst: {
@@ -15831,7 +15391,6 @@ pkmn.megaDiancie = {
   },
 };
 
-// 720 Hoopa
 pkmn.hoopa = {
   type: ["psychic", "ghost"],
   bst: {
@@ -15856,7 +15415,6 @@ pkmn.hoopaUnbound = {
   },
 };
 
-// 721 Volcanion
 pkmn.volcanion = {
   type: ["fire", "water"],
   bst: {
@@ -15869,7 +15427,6 @@ pkmn.volcanion = {
   },
 };
 
-// 722 Rowlet → Dartrix → Decidueye
 pkmn.rowlet = {
   type: ["grass", "flying"],
   bst: {
@@ -15927,7 +15484,6 @@ pkmn.hisuianDecidueye = {
   },
 };
 
-// 725 Litten → Torracat → Incineroar
 pkmn.litten = {
   type: ["fire"],
   bst: {
@@ -15976,7 +15532,6 @@ pkmn.incineroar = {
   signature: move.darkestLariat,
 };
 
-// 728 Popplio → Brionne → Primarina
 pkmn.popplio = {
   type: ["water"],
   bst: {
@@ -16025,7 +15580,6 @@ pkmn.primarina = {
   signature: move.sparklingAria,
 };
 
-// 731 Pikipek → Trumbeak → Toucannon
 pkmn.pikipek = {
   type: ["normal", "flying"],
   bst: {
@@ -16074,7 +15628,6 @@ pkmn.toucannon = {
   signature: move.beakBlast,
 };
 
-// 734 Yungoos → Gumshoos
 pkmn.yungoos = {
   type: ["normal"],
   bst: {
@@ -16104,7 +15657,6 @@ pkmn.gumshoos = {
   hiddenAbility: ability.adaptability,
 };
 
-// 736 Grubbin → Charjabug → Vikavolt
 pkmn.grubbin = {
   type: ["bug"],
   bst: {
@@ -16150,7 +15702,6 @@ pkmn.vikavolt = {
   eggMove: move.auraWheel,
 };
 
-// 739 Crabrawler → Crabominable
 pkmn.crabrawler = {
   type: ["fighting"],
   bst: {
@@ -16198,7 +15749,6 @@ pkmn.megaCrabominable = {
 
 */
 
-// 741 Oricorio
 pkmn.oricorioBaile = {
   type: ["fire", "flying"],
   bst: {
@@ -16255,7 +15805,6 @@ pkmn.oricorioSensu = {
   hiddenAbility: ability.dancer,
 };
 
-// 742 Cutiefly → Ribombee
 pkmn.cutiefly = {
   type: ["bug", "fairy"],
   bst: {
@@ -16285,7 +15834,6 @@ pkmn.ribombee = {
   hiddenAbility: ability.faeRush,
 };
 
-// 744 Rockruff → Lycanroc
 pkmn.rockruff = {
   type: ["rock"],
   bst: {
@@ -16343,7 +15891,6 @@ pkmn.lycanrocDusk = {
   },
 };
 
-// 746 Wishiwashi
 pkmn.wishiwashi = {
   type: ["water"],
   bst: {
@@ -16368,7 +15915,6 @@ pkmn.wishiwashiSchool = {
   },
 };
 
-// 747 Mareanie → Toxapex
 pkmn.mareanie = {
   type: ["poison", "water"],
   bst: {
@@ -16396,7 +15942,6 @@ pkmn.toxapex = {
   },
 };
 
-// 749 Mudbray → Mudsdale
 pkmn.mudbray = {
   type: ["ground"],
   bst: {
@@ -16428,7 +15973,6 @@ pkmn.mudsdale = {
   hiddenAbility: ability.stamina,
 };
 
-// 751 Dewpider → Araquanid
 pkmn.dewpider = {
   type: ["water", "bug"],
   bst: {
@@ -16458,7 +16002,6 @@ pkmn.araquanid = {
   eggMove: move.snipeShot,
 };
 
-// 753 Fomantis → Lurantis
 pkmn.fomantis = {
   type: ["grass"],
   bst: {
@@ -16490,7 +16033,6 @@ pkmn.lurantis = {
   eggMove: move.needleArm,
 };
 
-// 755 Morelull → Shiinotic
 pkmn.morelull = {
   type: ["grass", "fairy"],
   bst: {
@@ -16520,7 +16062,6 @@ pkmn.shiinotic = {
   hiddenAbility: ability.colorSpore,
 };
 
-// 757 Salandit → Salazzle
 pkmn.salandit = {
   type: ["poison", "fire"],
   bst: {
@@ -16552,7 +16093,6 @@ pkmn.salazzle = {
   hiddenAbility: ability.corrosion,
 };
 
-// 759 Stufful → Bewear
 pkmn.stufful = {
   type: ["normal", "fighting"],
   bst: {
@@ -16582,7 +16122,6 @@ pkmn.bewear = {
   hiddenAbility: ability.angerPoint,
 };
 
-// 761 Bounsweet → Steenee → Tsareena
 pkmn.bounsweet = {
   type: ["grass"],
   bst: {
@@ -16631,7 +16170,6 @@ pkmn.tsareena = {
   hiddenAbility: ability.libero,
 };
 
-// 764 Comfey
 pkmn.comfey = {
   type: ["fairy"],
   bst: {
@@ -16646,7 +16184,6 @@ pkmn.comfey = {
   hiddenAbility: ability.purifyingSalt,
 };
 
-// 765 Oranguru
 pkmn.oranguru = {
   type: ["normal", "psychic"],
   bst: {
@@ -16661,7 +16198,6 @@ pkmn.oranguru = {
   eggMove: move.storedPower,
 };
 
-// 766 Passimian
 pkmn.passimian = {
   type: ["fighting"],
   bst: {
@@ -16676,7 +16212,6 @@ pkmn.passimian = {
   eggMove: move.hiJumpKick,
 };
 
-// 767 Wimpod → Golisopod
 pkmn.wimpod = {
   type: ["bug", "water"],
   bst: {
@@ -16724,7 +16259,6 @@ pkmn.megaGolisopod = {
 
 */
 
-// 769 Sandygast → Palossand
 pkmn.sandygast = {
   type: ["ghost", "ground"],
   bst: {
@@ -16752,7 +16286,6 @@ pkmn.palossand = {
   },
 };
 
-// 771 Pyukumuku
 pkmn.pyukumuku = {
   type: ["water"],
   bst: {
@@ -16765,7 +16298,6 @@ pkmn.pyukumuku = {
   },
 };
 
-// 772 Type: Null → Silvally
 pkmn.typeNull = {
   type: ["normal"],
   bst: {
@@ -16797,7 +16329,6 @@ pkmn.silvally = {
   eggMove: move.conversion,
 };
 
-// 774 Minior
 pkmn.minior = {
   type: ["rock", "flying"],
   bst: {
@@ -16910,7 +16441,6 @@ pkmn.miniorYellow = {
   eggMove: move.lunarDance,
 };
 
-// 775 Komala
 pkmn.komala = {
   type: ["normal"],
   bst: {
@@ -16923,7 +16453,6 @@ pkmn.komala = {
   },
 };
 
-// 776 Turtonator
 pkmn.turtonator = {
   type: ["fire", "dragon"],
   bst: {
@@ -16938,7 +16467,6 @@ pkmn.turtonator = {
   eggMove: move.pyroBall,
 };
 
-// 777 Togedemaru
 pkmn.togedemaru = {
   type: ["electric", "steel"],
   bst: {
@@ -16952,7 +16480,6 @@ pkmn.togedemaru = {
   signature: move.zingZap,
 };
 
-// 778 Mimikyu
 pkmn.mimikyu = {
   type: ["ghost", "fairy"],
   bst: {
@@ -16967,7 +16494,6 @@ pkmn.mimikyu = {
   eggMove: move.mimic,
 };
 
-// 779 Bruxish
 pkmn.bruxish = {
   type: ["water", "psychic"],
   bst: {
@@ -16981,7 +16507,6 @@ pkmn.bruxish = {
   hiddenAbility: ability.strongJaw,
 };
 
-// 780 Drampa
 pkmn.drampa = {
   type: ["normal", "dragon"],
   bst: {
@@ -17006,7 +16531,6 @@ pkmn.megaDrampa = {
   },
 };
 
-// 781 Dhelmise
 pkmn.dhelmise = {
   type: ["ghost", "grass"],
   bst: {
@@ -17020,7 +16544,6 @@ pkmn.dhelmise = {
   signature: move.anchorShot,
 };
 
-// 782 Jangmo-o → Hakamo-o → Kommo-o
 pkmn.jangmoo = {
   type: ["dragon"],
   bst: {
@@ -17069,7 +16592,6 @@ pkmn.kommoo = {
   hiddenAbility: ability.cacophony,
 };
 
-// 785 Tapu Koko
 pkmn.tapuKoko = {
   type: ["electric", "fairy"],
   bst: {
@@ -17084,7 +16606,6 @@ pkmn.tapuKoko = {
   eggMove: move.electrify,
 };
 
-// 786 Tapu Lele
 pkmn.tapuLele = {
   type: ["psychic", "fairy"],
   bst: {
@@ -17099,7 +16620,6 @@ pkmn.tapuLele = {
   eggMove: move.fairyLock,
 };
 
-// 787 Tapu Bulu
 pkmn.tapuBulu = {
   type: ["grass", "fairy"],
   bst: {
@@ -17114,7 +16634,6 @@ pkmn.tapuBulu = {
   eggMove: move.forestCurse,
 };
 
-// 788 Tapu Fini
 pkmn.tapuFini = {
   type: ["water", "fairy"],
   bst: {
@@ -17129,7 +16648,6 @@ pkmn.tapuFini = {
   eggMove: move.soak,
 };
 
-// 789 Cosmog → Cosmoem → Solgaleo / Lunala
 pkmn.cosmog = {
   type: ["psychic"],
   bst: {
@@ -17186,7 +16704,6 @@ pkmn.lunala = {
   signature: move.moongeistBeam,
 };
 
-// 793 Nihilego
 pkmn.nihilego = {
   type: ["rock", "poison"],
   bst: {
@@ -17201,7 +16718,6 @@ pkmn.nihilego = {
   eggMove: move.mimic,
 };
 
-// 794 Buzzwole
 pkmn.buzzwole = {
   type: ["bug", "fighting"],
   bst: {
@@ -17215,7 +16731,6 @@ pkmn.buzzwole = {
   hiddenAbility: ability.beastBoost,
 };
 
-// 795 Pheromosa
 pkmn.pheromosa = {
   type: ["bug", "fighting"],
   bst: {
@@ -17230,7 +16745,6 @@ pkmn.pheromosa = {
   eggMove: move.meFirst,
 };
 
-// 796 Xurkitree
 pkmn.xurkitree = {
   type: ["electric"],
   bst: {
@@ -17245,7 +16759,6 @@ pkmn.xurkitree = {
   eggMove: move.ionise,
 };
 
-// 797 Celesteela
 pkmn.celesteela = {
   type: ["steel", "flying"],
   bst: {
@@ -17260,7 +16773,6 @@ pkmn.celesteela = {
   eggMove: move.anchorShot,
 };
 
-// 798 Kartana
 pkmn.kartana = {
   type: ["grass", "steel"],
   bst: {
@@ -17274,7 +16786,6 @@ pkmn.kartana = {
   hiddenAbility: ability.beastBoost,
 };
 
-// 799 Guzzlord
 pkmn.guzzlord = {
   type: ["dark", "dragon"],
   bst: {
@@ -17288,7 +16799,6 @@ pkmn.guzzlord = {
   hiddenAbility: ability.beastBoost,
 };
 
-// 800 Necrozma
 pkmn.necrozma = {
   type: ["psychic"],
   bst: {
@@ -17339,7 +16849,6 @@ pkmn.ultraNecrozma = {
   },
 };
 
-// 801 Magearna
 pkmn.magearna = {
   type: ["steel", "fairy"],
   bst: {
@@ -17391,7 +16900,6 @@ pkmn.megaMagearnaOriginal = {
   },
 };
 
-// 802 Marshadow
 pkmn.marshadow = {
   hidden: true,
   type: ["fighting", "ghost"],
@@ -17407,7 +16915,6 @@ pkmn.marshadow = {
   signature: move.spectralThief,
 };
 
-// 803 Poipole → Naganadel
 pkmn.poipole = {
   type: ["poison"],
   bst: {
@@ -17439,7 +16946,6 @@ pkmn.naganadel = {
   eggMove: move.toxicThread,
 };
 
-// 805 Stakataka
 pkmn.stakataka = {
   type: ["rock", "steel"],
   bst: {
@@ -17454,7 +16960,6 @@ pkmn.stakataka = {
   eggMove: move.noRetreat,
 };
 
-// 806 Blacephalon
 pkmn.blacephalon = {
   type: ["fire", "ghost"],
   bst: {
@@ -17469,7 +16974,6 @@ pkmn.blacephalon = {
   hiddenAbility: ability.beastBoost,
 };
 
-// 807 Zeraora
 pkmn.zeraora = {
   type: ["electric"],
   bst: {
@@ -17494,7 +16998,6 @@ pkmn.megaZeraora = {
   },
 };
 
-// 808 Meltan → Melmetal
 pkmn.meltan = {
   type: ["steel"],
   bst: {
@@ -17540,7 +17043,6 @@ pkmn.melmetalGmax = {
   eggMove: move.gigatonHammer,
 };
 
-// 810 Grookey → Thwackey → Rillaboom
 pkmn.grookey = {
   type: ["grass"],
   bst: {
@@ -17603,7 +17105,6 @@ pkmn.rillaboomGmax = {
   signature: move.drumBeating,
 };
 
-// 813 Scorbunny → Raboot → Cinderace
 pkmn.scorbunny = {
   type: ["fire"],
   bst: {
@@ -17666,7 +17167,6 @@ pkmn.cinderaceGmax = {
   hiddenAbility: ability.libero,
 };
 
-// 816 Sobble → Drizzile → Inteleon
 pkmn.sobble = {
   type: ["water"],
   bst: {
@@ -17725,7 +17225,6 @@ pkmn.inteleonGmax = {
   signature: move.snipeShot,
 };
 
-// 819 Skwovet → Greedent
 pkmn.skwovet = {
   type: ["normal"],
   bst: {
@@ -17753,7 +17252,6 @@ pkmn.greedent = {
   },
 };
 
-// 821 Rookidee → Corvisquire → Corviknight
 pkmn.rookidee = {
   type: ["flying"],
   bst: {
@@ -17814,7 +17312,6 @@ pkmn.corviknightGmax = {
   },
 };
 
-// 824 Blipbug → Dottler → Orbeetle
 pkmn.blipbug = {
   type: ["bug"],
   bst: {
@@ -17873,7 +17370,6 @@ pkmn.orbeetleGmax = {
   eggMove: move.magicPowder,
 };
 
-// 827 Nickit → Thievul
 pkmn.nickit = {
   type: ["dark"],
   bst: {
@@ -17903,7 +17399,6 @@ pkmn.thievul = {
   hiddenAbility: ability.pickPocket,
 };
 
-// 829 Gossifleur → Eldegoss
 pkmn.gossifleur = {
   type: ["grass"],
   bst: {
@@ -17933,7 +17428,6 @@ pkmn.eldegoss = {
   hiddenAbility: ability.flowerVeil,
 };
 
-// 831 Wooloo → Dubwool
 pkmn.wooloo = {
   type: ["normal"],
   bst: {
@@ -17961,7 +17455,6 @@ pkmn.dubwool = {
   },
 };
 
-// 833 Chewtle → Drednaw
 pkmn.chewtle = {
   type: ["water"],
   bst: {
@@ -18004,7 +17497,6 @@ pkmn.drednawGmax = {
   hiddenAbility: ability.strongJaw,
 };
 
-// 835 Yamper → Boltund
 pkmn.yamper = {
   type: ["electric"],
   bst: {
@@ -18036,7 +17528,6 @@ pkmn.boltund = {
   eggMove: move.zingZap,
 };
 
-// 837 Rolycoly → Carkol → Coalossal
 pkmn.rolycoly = {
   type: ["rock"],
   bst: {
@@ -18095,7 +17586,6 @@ pkmn.coalossalGmax = {
   hiddenAbility: ability.solarPower,
 };
 
-// 840 Applin → Flapple / Appletun
 pkmn.applin = {
   type: ["grass", "dragon"],
   bst: {
@@ -18184,7 +17674,6 @@ pkmn.hydrapple = {
   },
 };
 
-// 843 Silicobra → Sandaconda
 pkmn.silicobra = {
   type: ["ground"],
   bst: {
@@ -18227,7 +17716,6 @@ pkmn.sandacondaGmax = {
   hiddenAbility: ability.sandyPelt,
 };
 
-// 845 Cramorant
 pkmn.cramorant = {
   type: ["flying", "water"],
   bst: {
@@ -18240,7 +17728,6 @@ pkmn.cramorant = {
   },
 };
 
-// 846 Arrokuda → Barraskewda
 pkmn.arrokuda = {
   type: ["water"],
   bst: {
@@ -18270,7 +17757,6 @@ pkmn.barraskewda = {
   hiddenAbility: ability.swiftSwim,
 };
 
-// 848 Toxel → Toxtricity
 pkmn.toxel = {
   type: ["electric", "poison"],
   bst: {
@@ -18316,7 +17802,6 @@ pkmn.toxtricityGmax = {
   eggMove: move.boomburst,
 };
 
-// 850 Sizzlipede → Centiskorch
 pkmn.sizzlipede = {
   type: ["fire", "bug"],
   bst: {
@@ -18362,7 +17847,6 @@ pkmn.centiskorchGmax = {
   hiddenAbility: ability.scorch,
 };
 
-// 852 Clobbopus → Grapploct
 pkmn.clobbopus = {
   type: ["fighting"],
   bst: {
@@ -18392,7 +17876,6 @@ pkmn.grapploct = {
   hiddenAbility: ability.technician,
 };
 
-// 854 Sinistea → Polteageist
 pkmn.sinistea = {
   type: ["ghost"],
   bst: {
@@ -18424,7 +17907,6 @@ pkmn.polteageist = {
   hiddenAbility: ability.somberField,
 };
 
-// 856 Hatenna → Hattrem → Hatterene
 pkmn.hatenna = {
   type: ["psychic"],
   bst: {
@@ -18487,7 +17969,6 @@ pkmn.hattereneGmax = {
   hiddenAbility: ability.neuroforce,
 };
 
-// 859 Impidimp → Morgrem → Grimmsnarl
 pkmn.impidimp = {
   type: ["dark", "fairy"],
   bst: {
@@ -18550,14 +18031,6 @@ pkmn.grimmsnarlGmax = {
   signature: move.falseSurrender,
 };
 
-// 862 Obstagoon
-// 863 Perrserker
-// 864 Cursola
-// 865 Sirfetch'd
-// 866 Mr. Rime
-// 867 Runerigus
-
-// 868 Milcery → Alcremie
 pkmn.milcery = {
   type: ["fairy"],
   bst: {
@@ -18603,7 +18076,6 @@ pkmn.alcremieGmax = {
   eggMove: move.teatime,
 };
 
-// 870 Falinks
 pkmn.falinks = {
   type: ["fighting"],
   bst: {
@@ -18635,7 +18107,6 @@ pkmn.megaFalinks = {
   signature: move.noRetreat,
 };
 
-// 871 Pincurchin
 pkmn.pincurchin = {
   type: ["electric"],
   bst: {
@@ -18650,7 +18121,6 @@ pkmn.pincurchin = {
   eggMove: move.acupressure,
 };
 
-// 872 Snom → Frosmoth
 pkmn.snom = {
   type: ["ice", "bug"],
   bst: {
@@ -18682,7 +18152,6 @@ pkmn.frosmoth = {
   eggMove: move.snowscape,
 };
 
-// 874 Stonjourner
 pkmn.stonjourner = {
   type: ["rock"],
   bst: {
@@ -18696,7 +18165,6 @@ pkmn.stonjourner = {
   hiddenAbility: ability.stoned,
 };
 
-// 875 Eiscue
 pkmn.eiscue = {
   type: ["ice"],
   bst: {
@@ -18711,7 +18179,6 @@ pkmn.eiscue = {
   eggMove: move.bellyDrum,
 };
 
-// 876 Indeedee
 pkmn.indeedee = {
   type: ["psychic", "normal"],
   bst: {
@@ -18726,7 +18193,6 @@ pkmn.indeedee = {
   eggMove: move.storedPower,
 };
 
-// 877 Morpeko
 pkmn.morpeko = {
   type: ["electric", "dark"],
   bst: {
@@ -18741,7 +18207,6 @@ pkmn.morpeko = {
   signature: move.auraWheel,
 };
 
-// 878 Cufant → Copperajah
 pkmn.cufant = {
   type: ["steel"],
   bst: {
@@ -18784,7 +18249,6 @@ pkmn.copperajahGmax = {
   hiddenAbility: ability.sheerForce,
 };
 
-// 880 Dracozolt
 pkmn.dracozolt = {
   type: ["electric", "dragon"],
   bst: {
@@ -18797,7 +18261,6 @@ pkmn.dracozolt = {
   },
 };
 
-// 881 Arctozolt
 pkmn.arctozolt = {
   type: ["electric", "ice"],
   bst: {
@@ -18812,7 +18275,6 @@ pkmn.arctozolt = {
   eggMove: move.freezeDry,
 };
 
-// 882 Dracovish
 pkmn.dracovish = {
   type: ["water", "dragon"],
   bst: {
@@ -18827,7 +18289,6 @@ pkmn.dracovish = {
   signature: move.fishiousRend,
 };
 
-// 883 Arctovish
 pkmn.arctovish = {
   type: ["water", "ice"],
   bst: {
@@ -18842,7 +18303,6 @@ pkmn.arctovish = {
   signature: move.fishiousRend,
 };
 
-// 884 Duraludon → Archaludon
 pkmn.duraludon = {
   type: ["steel", "dragon"],
   bst: {
@@ -18885,7 +18345,6 @@ pkmn.archaludon = {
   eggMove: move.kingsShield,
 };
 
-// 885 Dreepy → Drakloak → Dragapult
 pkmn.dreepy = {
   type: ["dragon", "ghost"],
   bst: {
@@ -18934,7 +18393,6 @@ pkmn.dragapult = {
   hiddenAbility: ability.megaLauncher,
 };
 
-// 888 Zacian
 pkmn.zacian = {
   type: ["fairy"],
   bst: {
@@ -18960,7 +18418,6 @@ pkmn.zacianCrowned = {
   },
 };
 
-// 889 Zamazenta
 pkmn.zamazenta = {
   type: ["fighting"],
   bst: {
@@ -18986,7 +18443,6 @@ pkmn.zamazentaCrowned = {
   },
 };
 
-// 890 Eternatus
 pkmn.eternatus = {
   type: ["poison", "dragon"],
   bst: {
@@ -19000,7 +18456,6 @@ pkmn.eternatus = {
   hiddenAbility: ability.supremeOverlord,
 };
 
-// 891 Kubfu → Urshifu
 pkmn.kubfu = {
   type: ["fighting"],
   bst: {
@@ -19071,7 +18526,6 @@ pkmn.urshifuRapidGmax = {
   },
 };
 
-// 893 Zarude
 pkmn.zarude = {
   type: ["dark", "grass"],
   bst: {
@@ -19096,7 +18550,6 @@ pkmn.zarudeDada = {
   },
 };
 
-// 894 Regieleki
 pkmn.regieleki = {
   type: ["electric"],
   bst: {
@@ -19111,7 +18564,6 @@ pkmn.regieleki = {
   signature: move.thunderCage,
 };
 
-// 895 Regidrago
 pkmn.regidrago = {
   type: ["dragon"],
   bst: {
@@ -19126,7 +18578,6 @@ pkmn.regidrago = {
   signature: move.dragonEnergy,
 };
 
-// 896 Glastrier
 pkmn.glastrier = {
   type: ["ice"],
   bst: {
@@ -19139,7 +18590,6 @@ pkmn.glastrier = {
   },
 };
 
-// 897 Spectrier
 pkmn.spectrier = {
   type: ["ghost"],
   bst: {
@@ -19152,7 +18602,6 @@ pkmn.spectrier = {
   },
 };
 
-// 898 Calyrex
 pkmn.calyrex = {
   type: ["psychic", "grass"],
   bst: {
@@ -19189,14 +18638,6 @@ pkmn.calyrexShadow = {
   },
 };
 
-// 899 Wyrdeer
-// 900 Kleavor
-// 901 Ursaluna
-// 902 Basculegion
-// 903 Sneasler
-// 904 Overqwil
-
-// 906 Sprigatito → Floragato → Meowscarada
 pkmn.sprigatito = {
   type: ["grass"],
   bst: {
@@ -19245,7 +18686,6 @@ pkmn.meowscarada = {
   eggMove: move.needleArm,
 };
 
-// 909 Fuecoco → Crocalor → Skeledirge
 pkmn.fuecoco = {
   type: ["fire"],
   bst: {
@@ -19291,7 +18731,6 @@ pkmn.skeledirge = {
   signature: move.torchSong,
 };
 
-// 912 Quaxly → Quaxwell → Quaquaval
 pkmn.quaxly = {
   type: ["water"],
   bst: {
@@ -19340,7 +18779,6 @@ pkmn.quaquaval = {
   signature: move.aquaStep,
 };
 
-// 915 Lechonk → Oinkologne
 pkmn.lechonk = {
   type: ["normal"],
   bst: {
@@ -19368,7 +18806,6 @@ pkmn.oinkologne = {
   },
 };
 
-// 917 Tarountula → Spidops
 pkmn.tarountula = {
   type: ["bug"],
   bst: {
@@ -19396,7 +18833,6 @@ pkmn.spidops = {
   },
 };
 
-// 919 Nymble → Lokix
 pkmn.nymble = {
   type: ["bug"],
   bst: {
@@ -19426,7 +18862,6 @@ pkmn.lokix = {
   hiddenAbility: ability.tintedLens,
 };
 
-// 921 Pawmi → Pawmo → Pawmot
 pkmn.pawmi = {
   type: ["electric"],
   bst: {
@@ -19475,7 +18910,6 @@ pkmn.pawmot = {
   eggMove: move.hiJumpKick,
 };
 
-// 924 Tandemaus → Maushold
 pkmn.tandemaus = {
   type: ["normal"],
   bst: {
@@ -19505,7 +18939,6 @@ pkmn.maushold = {
   signature: move.populationBomb,
 };
 
-// 926 Fidough → Dachsbun
 pkmn.fidough = {
   type: ["fairy"],
   bst: {
@@ -19533,7 +18966,6 @@ pkmn.dachsbun = {
   },
 };
 
-// 928 Smoliv → Dolliv → Arboliva
 pkmn.smoliv = {
   type: ["grass", "normal"],
   bst: {
@@ -19579,7 +19011,6 @@ pkmn.arboliva = {
   eggMove: move.frenzyPlant,
 };
 
-// 931 Squawkabilly
 pkmn.squawkabilly = {
   type: ["normal", "flying"],
   bst: {
@@ -19593,7 +19024,6 @@ pkmn.squawkabilly = {
   eggMove: move.mimic,
 };
 
-// 932 Nacli → Naclstack → Garganacl
 pkmn.nacli = {
   type: ["rock"],
   bst: {
@@ -19642,7 +19072,6 @@ pkmn.garganacl = {
   eggMove: move.rockWrecker,
 };
 
-// 935 Charcadet → Armarouge / Ceruledge
 pkmn.charcadet = {
   type: ["fire"],
   bst: {
@@ -19689,7 +19118,6 @@ pkmn.ceruledge = {
   signature: move.bitterBlade,
 };
 
-// 938 Tadbulb → Bellibolt
 pkmn.tadbulb = {
   type: ["electric"],
   bst: {
@@ -19721,7 +19149,6 @@ pkmn.bellibolt = {
   eggMove: move.electroBall,
 };
 
-// 940 Wattrel → Kilowattrel
 pkmn.wattrel = {
   type: ["electric", "flying"],
   bst: {
@@ -19751,7 +19178,6 @@ pkmn.kilowattrel = {
   hiddenAbility: ability.justified,
 };
 
-// 942 Maschiff → Mabostiff
 pkmn.maschiff = {
   type: ["dark"],
   bst: {
@@ -19781,7 +19207,6 @@ pkmn.mabosstiff = {
   hiddenAbility: ability.blackPelt,
 };
 
-// 944 Shroodle → Grafaiai
 pkmn.shroodle = {
   type: ["poison", "normal"],
   bst: {
@@ -19813,7 +19238,6 @@ pkmn.grafaiai = {
   eggMove: move.sketch,
 };
 
-// 946 Bramblin → Brambleghast
 pkmn.bramblin = {
   type: ["grass", "ghost"],
   bst: {
@@ -19843,7 +19267,6 @@ pkmn.brambleghast = {
   hiddenAbility: ability.windRider,
 };
 
-// 948 Toedscool → Toedscruel
 pkmn.toedscool = {
   type: ["ground", "grass"],
   bst: {
@@ -19873,7 +19296,6 @@ pkmn.toedscruel = {
   hiddenAbility: ability.merciless,
 };
 
-// 950 Klawf
 pkmn.klawf = {
   type: ["rock"],
   bst: {
@@ -19886,7 +19308,6 @@ pkmn.klawf = {
   },
 };
 
-// 951 Capsakid → Scovillain
 pkmn.capsakid = {
   type: ["grass"],
   bst: {
@@ -19932,7 +19353,6 @@ pkmn.megaScovillain = {
   eggMove: move.inferno,
 };
 
-// 953 Rellor → Rabsca
 pkmn.rellor = {
   type: ["bug"],
   bst: {
@@ -19962,7 +19382,6 @@ pkmn.rabsca = {
   hiddenAbility: ability.chrysilate,
 };
 
-// 955 Flittle → Espathra
 pkmn.flittle = {
   type: ["psychic"],
   bst: {
@@ -19994,7 +19413,6 @@ pkmn.espathra = {
   signature: move.luminaCrash,
 };
 
-// 957 Tinkatink → Tinkatuff → Tinkaton
 pkmn.tinkatink = {
   type: ["fairy", "steel"],
   bst: {
@@ -20043,7 +19461,6 @@ pkmn.tinkaton = {
   signature: move.gigatonHammer,
 };
 
-// 960 Wiglett → Wugtrio
 pkmn.wiglett = {
   type: ["water"],
   bst: {
@@ -20075,7 +19492,6 @@ pkmn.wugtrio = {
   hiddenAbility: ability.technician,
 };
 
-// 962 Bombirdier
 pkmn.bombirdier = {
   type: ["flying", "dark"],
   bst: {
@@ -20088,7 +19504,6 @@ pkmn.bombirdier = {
   },
 };
 
-// 963 Finizen → Palafin
 pkmn.finizen = {
   type: ["water"],
   bst: {
@@ -20134,7 +19549,6 @@ pkmn.palafinHero = {
 
 */
 
-// 965 Varoom → Revavroom
 pkmn.varoom = {
   type: ["steel", "poison"],
   bst: {
@@ -20164,7 +19578,6 @@ pkmn.revavroom = {
   hiddenAbility: ability.hyperconductor,
 };
 
-// 967 Cyclizar
 pkmn.cyclizar = {
   type: ["dragon", "normal"],
   bst: {
@@ -20177,7 +19590,6 @@ pkmn.cyclizar = {
   },
 };
 
-// 968 Orthworm
 pkmn.orthworm = {
   type: ["steel"],
   bst: {
@@ -20191,7 +19603,6 @@ pkmn.orthworm = {
   hiddenAbility: ability.simple,
 };
 
-// 969 Glimmet → Glimmora
 pkmn.glimmet = {
   type: ["rock", "poison"],
   bst: {
@@ -20234,7 +19645,6 @@ pkmn.megaGlimmora = {
   hiddenAbility: ability.corrosion,
 };
 
-// 971 Greavard → Houndstone
 pkmn.greavard = {
   type: ["ghost"],
   bst: {
@@ -20262,7 +19672,6 @@ pkmn.houndstone = {
   },
 };
 
-// 973 Flamigo
 pkmn.flamigo = {
   type: ["flying", "fighting"],
   bst: {
@@ -20276,7 +19685,6 @@ pkmn.flamigo = {
   hiddenAbility: ability.costar,
 };
 
-// 974 Cetoddle → Cetitan
 pkmn.cetoddle = {
   type: ["ice"],
   bst: {
@@ -20306,7 +19714,6 @@ pkmn.cetitan = {
   hiddenAbility: ability.iceBody,
 };
 
-// 976 Veluza
 pkmn.veluza = {
   type: ["water", "psychic"],
   bst: {
@@ -20319,7 +19726,6 @@ pkmn.veluza = {
   },
 };
 
-// 977 Dondozo
 pkmn.dondozo = {
   type: ["water"],
   bst: {
@@ -20332,7 +19738,6 @@ pkmn.dondozo = {
   },
 };
 
-// 978 Tatsugiri
 pkmn.tatsugiri = {
   rename: `tatsugiri Curly`,
   type: ["dragon", "water"],
@@ -20413,13 +19818,6 @@ pkmn.megaTatsugiriStretchy = {
 
 */
 
-// 979 Annihilape
-// 980 Clodsire
-// 981 Farigiraf
-// 982 Dudunsparce
-// 983 Kingambit
-
-// 984 Great Tusk
 pkmn.greatTusk = {
   type: ["ground", "fighting"],
   bst: {
@@ -20433,7 +19831,6 @@ pkmn.greatTusk = {
   hiddenAbility: ability.protosynthesis,
 };
 
-// 985 Scream Tail
 pkmn.screamTail = {
   type: ["fairy", "psychic"],
   bst: {
@@ -20448,7 +19845,6 @@ pkmn.screamTail = {
   eggMove: move.boomburst,
 };
 
-// 986 Brute Bonnet
 pkmn.bruteBonnet = {
   type: ["grass", "dark"],
   bst: {
@@ -20463,7 +19859,6 @@ pkmn.bruteBonnet = {
   eggMove: move.cottonGuard,
 };
 
-// 987 Flutter Mane
 pkmn.flutterMane = {
   type: ["ghost", "fairy"],
   bst: {
@@ -20477,7 +19872,6 @@ pkmn.flutterMane = {
   hiddenAbility: ability.protosynthesis,
 };
 
-// 988 Slither Wing
 pkmn.slitherWing = {
   type: ["bug", "fighting"],
   bst: {
@@ -20491,7 +19885,6 @@ pkmn.slitherWing = {
   hiddenAbility: ability.protosynthesis,
 };
 
-// 989 Sandy Shocks
 pkmn.sandyShocks = {
   type: ["electric", "ground"],
   bst: {
@@ -20506,7 +19899,6 @@ pkmn.sandyShocks = {
   eggMove: move.ionise,
 };
 
-// 990 Iron Treads
 pkmn.ironTreads = {
   type: ["ground", "steel"],
   bst: {
@@ -20520,7 +19912,6 @@ pkmn.ironTreads = {
   hiddenAbility: ability.quarkDrive,
 };
 
-// 991 Iron Bundle
 pkmn.ironBundle = {
   type: ["ice", "water"],
   bst: {
@@ -20534,7 +19925,6 @@ pkmn.ironBundle = {
   hiddenAbility: ability.quarkDrive,
 };
 
-// 992 Iron Hands
 pkmn.ironHands = {
   type: ["fighting", "electric"],
   bst: {
@@ -20548,7 +19938,6 @@ pkmn.ironHands = {
   hiddenAbility: ability.quarkDrive,
 };
 
-// 993 Iron Jugulis
 pkmn.ironJugulis = {
   type: ["dark", "flying"],
   bst: {
@@ -20562,7 +19951,6 @@ pkmn.ironJugulis = {
   hiddenAbility: ability.quarkDrive,
 };
 
-// 994 Iron Moth
 pkmn.ironMoth = {
   type: ["fire", "poison"],
   bst: {
@@ -20577,7 +19965,6 @@ pkmn.ironMoth = {
   signature: move.fieryDance,
 };
 
-// 995 Iron Thorns
 pkmn.ironThorns = {
   type: ["rock", "electric"],
   bst: {
@@ -20591,7 +19978,6 @@ pkmn.ironThorns = {
   hiddenAbility: ability.quarkDrive,
 };
 
-// 996 Frigibax → Arctibax → Baxcalibur
 pkmn.frigibax = {
   type: ["dragon", "ice"],
   bst: {
@@ -20657,7 +20043,6 @@ pkmn.megaBaxcalibur = {
   eggMove: move.spacialRend,
 };
 
-// 999 Gimmighoul → Gholdengo
 pkmn.gimmighoul = {
   type: ["ghost"],
   bst: {
@@ -20701,7 +20086,6 @@ pkmn.gholdengo = {
   eggMove: move.payDay,
 };
 
-// 1001 Wo-Chien
 pkmn.woChien = {
   type: ["dark", "grass"],
   bst: {
@@ -20716,7 +20100,6 @@ pkmn.woChien = {
   signature: move.ruination,
 };
 
-// 1002 Chien-Pao
 pkmn.chienPao = {
   type: ["dark", "ice"],
   bst: {
@@ -20731,7 +20114,6 @@ pkmn.chienPao = {
   signature: move.ruination,
 };
 
-// 1003 Ting-Lu
 pkmn.tingLu = {
   type: ["dark", "ground"],
   bst: {
@@ -20746,7 +20128,6 @@ pkmn.tingLu = {
   signature: move.ruination,
 };
 
-// 1004 Chi-Yu
 pkmn.chiYu = {
   type: ["dark", "fire"],
   bst: {
@@ -20761,7 +20142,6 @@ pkmn.chiYu = {
   signature: move.ruination,
 };
 
-// 1005 Roaring Moon
 pkmn.roaringMoon = {
   type: ["dragon", "dark"],
   bst: {
@@ -20775,7 +20155,6 @@ pkmn.roaringMoon = {
   hiddenAbility: ability.protosynthesis,
 };
 
-// 1006 Iron Valiant
 pkmn.ironValiant = {
   type: ["fairy", "fighting"],
   bst: {
@@ -20789,7 +20168,6 @@ pkmn.ironValiant = {
   hiddenAbility: ability.quarkDrive,
 };
 
-// 1010 Iron Leaves
 pkmn.ironLeaves = {
   type: ["grass", "psychic"],
   bst: {
@@ -20803,7 +20181,6 @@ pkmn.ironLeaves = {
   hiddenAbility: ability.quarkDrive,
 };
 
-// 1022 Iron Boulder
 pkmn.ironBoulder = {
   type: ["rock", "psychic"],
   bst: {
@@ -20817,7 +20194,6 @@ pkmn.ironBoulder = {
   hiddenAbility: ability.quarkDrive,
 };
 
-// 1023 Iron Crown
 pkmn.ironCrown = {
   type: ["steel", "psychic"],
   bst: {
@@ -20831,7 +20207,6 @@ pkmn.ironCrown = {
   hiddenAbility: ability.quarkDrive,
 };
 
-// 1007 Koraidon
 pkmn.koraidon = {
   type: ["fighting", "dragon"],
   bst: {
@@ -20844,7 +20219,6 @@ pkmn.koraidon = {
   },
 };
 
-// 1008 Miraidon
 pkmn.miraidon = {
   type: ["electric", "dragon"],
   bst: {
@@ -20857,7 +20231,6 @@ pkmn.miraidon = {
   },
 };
 
-// 1009 Walking Wake
 pkmn.walkingWake = {
   type: ["water", "dragon"],
   bst: {
@@ -20871,7 +20244,6 @@ pkmn.walkingWake = {
   hiddenAbility: ability.protosynthesis,
 };
 
-// 1020 Gouging Fire
 pkmn.gougingFire = {
   type: ["fire", "dragon"],
   bst: {
@@ -20885,7 +20257,6 @@ pkmn.gougingFire = {
   hiddenAbility: ability.protosynthesis,
 };
 
-// 1021 Raging Bolt
 pkmn.ragingBolt = {
   type: ["electric", "dragon"],
   bst: {
@@ -20899,9 +20270,6 @@ pkmn.ragingBolt = {
   hiddenAbility: ability.protosynthesis,
 };
 
-// 1011 Dipplin
-
-// 1012 Poltchageist → Sinistcha
 pkmn.poltchageist = {
   type: ["grass", "ghost"],
   bst: {
@@ -20929,7 +20297,6 @@ pkmn.sinistcha = {
   },
 };
 
-// 1014 Okidogi
 pkmn.okidogi = {
   type: ["poison", "fighting"],
   bst: {
@@ -20942,7 +20309,6 @@ pkmn.okidogi = {
   },
 };
 
-// 1015 Munkidori
 pkmn.munkidori = {
   type: ["poison", "psychic"],
   bst: {
@@ -20955,7 +20321,6 @@ pkmn.munkidori = {
   },
 };
 
-// 1016 Fezandipiti
 pkmn.fezandipiti = {
   type: ["poison", "fairy"],
   bst: {
@@ -20968,7 +20333,6 @@ pkmn.fezandipiti = {
   },
 };
 
-// 1017 Ogerpon
 pkmn.ogerponTeal = {
   type: ["grass"],
   bst: {
@@ -21017,10 +20381,6 @@ pkmn.ogerponCornerstone = {
   },
 };
 
-// 1018 Archaludon
-// 1019 Hydrapple
-
-// 1024 Terapagos
 pkmn.terapagos = {
   type: ["normal"],
   bst: {
@@ -21057,7 +20417,6 @@ pkmn.terapagosStellar = {
   },
 };
 
-// 1025 Pecharunt
 pkmn.pecharunt = {
   type: ["poison", "ghost"],
   bst: {
