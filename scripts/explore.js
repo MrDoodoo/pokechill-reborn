@@ -5823,6 +5823,7 @@ function setEventAreas() {
   if (rotationEventCurrent == 4) eventTitle = `Aether Takeover`;
   if (rotationEventCurrent == 5) eventTitle = `Science Future`;
   if (rotationEventCurrent == 6) eventTitle = `Sinnoh Expedition`;
+  if (rotationEventCurrent == 7) eventTitle = `Tundra Trek`;
 
   if (rotationEventCurrent == 1)
     document.getElementById("event-banner").style.backgroundImage =
@@ -5842,6 +5843,9 @@ function setEventAreas() {
   if (rotationEventCurrent == 6)
     document.getElementById("event-banner").style.backgroundImage =
       "url(img/bg/event/sinnoh.jpg)";
+  if (rotationEventCurrent == 7)
+    document.getElementById("event-banner").style.backgroundImage =
+      "url(img/bg/event/tundra.jpg)";
 
   document.getElementById("event-banner").innerHTML =
     `<span>- ${eventTitle} -</span>`;
@@ -7058,6 +7062,30 @@ function updatePokedex() {
           updatePokedex();
 
           if (item.abilityCapsule.got <= 0) {
+            updateItemBag();
+            exitTmTeaching();
+          }
+        });
+      }
+
+      if (itemToUse == item.abilityLock.id) {
+        // Si le Pokémon n'a pas de talent caché défini, on ignore
+        if (pkmn[i].hiddenAbility == undefined) continue;
+            
+        // Si le talent caché est DÉJÀ verrouillé, on ignore (on ne peut pas re-lock ce qui l'est déjà)
+        if (pkmn[i].hiddenAbilityUnlocked == false || pkmn[i].hiddenAbilityUnlocked == undefined) continue;
+            
+        div.addEventListener("click", (e) => {
+          // On verrouille à nouveau
+          pkmn[i].hiddenAbilityUnlocked = false;
+          
+          // On consomme l'item
+          item.abilityLock.got--;
+          
+          updatePokedex();
+        
+          // Si on n'en a plus en stock, on ferme l'interface
+          if (item.abilityLock.got <= 0) {
             updateItemBag();
             exitTmTeaching();
           }
