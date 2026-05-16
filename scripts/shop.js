@@ -32,6 +32,12 @@ shop.shopabilityCapsule = {
   category: `goods`,
 };
 
+shop.shopabilityLock = {
+  icon: item.abilityLock.id,
+  price: 50,
+  category: `goods`,
+};
+
 shop.shopheartScale = {
   icon: item.heartScale.id,
   price: 5,
@@ -145,6 +151,20 @@ shop.shopwisdomPetal = {
   },
   effect: function () {
     item.wisdomPetal.got += 25;
+  },
+};
+
+shop.shoparticRock = {
+  icon: item.articRock.id,
+  name: `Artic Rock x25`,
+  price: 10,
+  currency: item.fieryRock.id,
+  category: `goods`,
+  condition: function () {
+    if (rotationEventCurrent == 7) return true;
+  },
+  effect: function () {
+    item.articRock.got += 25;
   },
 };
 
