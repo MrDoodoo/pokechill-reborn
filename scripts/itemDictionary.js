@@ -1042,6 +1042,14 @@ item.abilityCapsule = {
   },
 };
 
+item.abilityLock = {
+  type: "key",
+  itemToUse: true,
+  info: function () {
+    return `Use: Re-lock the hidden ability of a Pokemon and return to its standard ability.`;
+  },
+};
+
 item.heartScale = {
   type: "key",
   itemToUse: true,
@@ -1203,9 +1211,17 @@ item.thunderousRock = {
   },
 };
 
+item.fieryRock = {
+  type: "key",
+  rotation: 7,
+  info: function () {
+    return `Can be used to catch event Pokemon.`;
+  },
+};
+
 item.articRock = {
   type: "key",
-  rotation: 1,
+  rotation: 7,
   info: function () {
     return `Can be used to catch event Pokemon.`;
   },
